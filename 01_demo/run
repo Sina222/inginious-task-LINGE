@@ -1,0 +1,30 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
+# A AMELIORER
+import os
+import subprocess
+import shlex
+from inginious import feedback
+from inginious import input
+
+
+if __name__ == "__main__":
+	os.chdir("student")
+	input.parse_template("student_code.py.tpl", "student_code.py")
+
+	p = subprocess.Popen(shlex.split("python3 test.py"), stderr=subprocess.STDOUT, stdout=subprocess.PIPE)
+	make_output = p.communicate()[0].decode('utf-8')
+
+	if p.returncode:
+		feedback.set_global_result("failed")
+		feedback.set_global_feedback("La compilation de votre code a échoué. Voici l'erreur:" + make_output)
+		exit(0)
+	elif "True" in make_output:
+		feedback.set_global_result("success")
+		feedback.set_global_feedback("Vous avez résolu l'exercice.")
+		feedback.set_problem_feedback("Bien","thecode") #attention! thecode est l'id de la sous-question
+	else:
+		feedback.set_global_result("failed")
+		feedback.set_global_feedback("Vous n'avez pas résolu cette instance")
+feedback.set_problem_feedback(make_output,"thecode")
