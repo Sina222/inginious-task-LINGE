@@ -1,7 +1,8 @@
-from student_code import arret
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
 import math
 
-def arret_good(but):
+def arret(but):
     hb,lb,lg=0,0,0
     output=[0,0,0]
     for h in range(len(but)): #until H
@@ -28,16 +29,3 @@ def arret_good(but):
         output[1]=math.degrees(math.atan(hb/(abs(lg-lb))))
     return output
 
-
-if __name__ == "__main__":
-    H=10
-    L=20
-    BUT=[['X' for j in range(0,L)] for i in range(0,H)]
-    BUT[6][5]='G'
-    BUT[3][14]='B'
-    res=arret(BUT)
-    res_good = arret_good(BUT)
-    if res == res_good:
-        print("True")
-    else:
-        print("La bonne réponse B en [3][14] et G en [6][5] est la direction {} avec un angle de {} sur une distance de {}".format(res_good[0],res_good[1],res_good[2]))
