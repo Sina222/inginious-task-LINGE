@@ -1,0 +1,46 @@
+accessible: true
+author: Tanguy Losseau
+context: |-
+    Pour cette question, nous allons vous demander de calculer une approximation numérique de l’intégrale d’une fonction f(x) – une approximation de :math:`\int_{a}^{b} f(x) dx`. Notez que le calcul de la valeur de cette fonction f pour un x donné vous est fourni sous forme d’une fonction que vous devez appeler dans votre code.
+
+        **La fonction f vous est donnée et vous ne devez donc pas l’implémenter ! Uniquement l’utiliser.**
+
+    La fonction que nous vous demandons d’implémenter (integrale) prend différents arguments en entrée : les points a et b, respectivement de début et de fin de l’intervalle global [a, b] sur lequel calculer l’intégrale de la fonction (l’aire sous la fonction dans l’intervalle global [a, b]), ainsi que nbPoints, le nombre de points d’échantillonnage par lesquels vous devez subdiviser [a, b] en sous-intervalles. Les points a et b sont considérés comme faisant partie de l’intervalle et l’on suppose a < b. Bien entendu, au plus nbPoints est élevé, meilleure sera l’approximation.
+
+    Dans le cadre de cet exercice, nous vous demandons d’utiliser la méthode des trapèzes afin de calculer la valeur approximative de l’intégrale. Cette méthode est illustrée par la figure ci-dessous pour une approximation contenant trois sous-intervalles, chaque sous-intervalle [xi, xi+1] étant de longueur égale. Dans cet exemple, vous remarquez que l’aire sous la fonction est approximée dans chaque sous-intervalle délimité par [xi, xi+1] en effectuant une interpolation linéaire entre les deux valeurs correspondantes des ordonnées yi = f(xi) et yi+1 = f(xi+1) (ces deux valeurs sont reliées par un segment de droite).
+
+        .. figure:: 2019_Janvier_Probleme_10_integrale/trapeze.png
+                      :height: 200px
+                      :align: right
+
+                      Illustration de la méthode des trapèzes appliquée à une fonction f(x) (source : Wikipedia).
+
+    Notez que, dans cet exemple, nbPoints = 4. Par ailleurs, nous faisons l’hypothèse simplificatrice que la fonction reste non-négative sur l’ensemble de son domaine.
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    time: '30'
+    memory: '100'
+name: 2019 Janvier Probleme 10-integrale
+network_grading: false
+problems:
+    thecode:
+        type: code
+        name: 'Intégration: méthode des trapèzes'
+        header: |
+            Nous vous demandons donc d’implémenter la méthode suivante :
+            **integrale(a , b , nbPoints)**
+            , qui intègre la fonction **f(x)** prenant en argument un nombre réel x et renvoie en sortie la valeur de la fonction f au point d’abscisse x.
+        default: |-
+            def integrale(a,b,nbPoints):
+                return f(a)
+        language: python
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
