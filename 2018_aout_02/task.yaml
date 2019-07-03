@@ -29,7 +29,7 @@ limits:
     memory: '100'
 name: 'Session 7 : Best pilot'
 network_grading: false
-order: 74
+order: 80
 problems:
     q1:
         language: python
