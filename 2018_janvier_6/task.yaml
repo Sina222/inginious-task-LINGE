@@ -1,0 +1,124 @@
+accessible: true
+author: Maxime Postaire, Jean-François Sambon
+context: |-
+    Considérons une liste d’entiers de taille quelconque.
+
+    Nous vous demandons d’implémenter un programme permettant de déterminer la plus grande vallée (voir
+    définition ci-dessous) au sein de cette liste d’entiers. Pour résoudre le problème, vous allez devoir écrire trois
+    méthodes.
+
+    **Exemple :**
+    Considérons par exemple la liste d’entiers suivant : ``tab = {3, 6, 7, 10, 13, 11, 11, 12, 10, 9, 7, 5, 4, 3, 3, 4, 3,
+    4, 2, 1, 2}`` et la représentation de cette liste dans le plan cartésien, les indices du tableau étant représentés sur
+    l’axe X et les valeurs correspondantes (éléments de la liste) étant représentées sur l’axe Y (*Figure 1*).
+
+    .. image:: 2018_janvier_6/figure1.png
+        :height: 350px
+
+    **Définition d’une vallée :**
+    Un **intervalle d’indices** :math:`[i,j]` de cette liste, est considéré comme une **vallée** si les valeurs de la liste pour les
+    indices allant de :math:`i` à :math:`j` (:math:`i` et :math:`j` compris) sont toutes inférieures ou égales aux valeurs de la droite reliant les points :math:`i`
+    et :math:`j`, pour leur indice respectif (notion proche de la notion de concavité d’une fonction). Autrement dit, un
+    intervalle d’indices :math:`[i, j]` est considéré comme une vallée si les points du graphe (tel que représenté en *Figure 1*)
+    compris entre les indices :math:`i` et :math:`j` se trouvent toujours sur ou sous la droite reliant les deux points :math:`(i, tab[i])` et :math:`(j, tab[j])`. La taille d’une vallée est donnée par la valeur absolue de la différence entre les deux positions :math:`i` et :math:`j`. Afin
+    d’illustrer cette définition, considérons la même liste d’entiers que ci-dessus, cette fois représenté en *Figure 2*.
+
+    .. image:: 2018_janvier_6/figure2.png
+        :height: 350px
+
+    La liste contient plusieurs vallées, dont certaines sont représentées sur la *Figure 2*. Par exemple, l’intervalle
+    d’indices :math:`[4, 7]` est une vallée car les points :math:`4`, :math:`5`, :math:`6` et :math:`7` se trouvent sous la droite reliant les points :math:`4` et :math:`7`, ou sur
+    elle pour les points frontière. Il en est de même pour les intervalles :math:`[7, 17]` et :math:`[10, 15]` qui sont également des
+    vallées. A l’inverse, l’intervalle :math:`[4, 15]` n’est pas une vallée car on peut observer sur la *Figure 2* que certains
+    points compris dans cet intervalle sont strictement au-dessus de la droite reliant les points :math:`4` et :math:`15` (en pointillé sur
+    la *Figure 2*).
+
+    Dans cet exemple, la plus grande vallée de la liste est celle déterminée par l’intervalle :math:`[7, 17]` et a une longueur
+    de :math:`10`. Afin de simplifier le problème, nous n’allons considérer l’existence de vallées qu’entre les *différents*
+    **maxima locaux** *de la liste*. Il ne faut donc tester que ces points de début et fin d’intervalle « candidats vallée ».
+    Dans l’exemple ci-dessus, :math:`[10, 15]` n’est donc plus considéré comme une vallée.
+
+    **Définition d’un maximum local :**
+    Un élément d’une liste est considéré comme un maximum local s’il est strictement plus grand que ses éléments
+    voisins (de gauche et de droite). Notons que nous considérons que les extrémités du tableau (premier et dernier
+    indice) ne peuvent pas être un maximum local.
+
+    A partir de ces informations, vous allez devoir écrire *trois fonctions*, au cours des quatre étapes suivantes.
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    output: '2'
+    memory: '100'
+name: '2018 Session Janvier - Problème 6 : Plus grande vallée'
+network_grading: false
+problems:
+    q1:
+        language: python
+        name: Maxima locaux
+        type: code
+        header: |-
+            Dans un premier temps, nous vous demandons donc d’implémenter une fonction ``maximaLocaux`` qui prend
+            en argument une liste d’entiers et qui renvoie une liste d’entiers contenant les indices de tous les maxima
+            locaux de la liste passé en argument, conformément à la définition de maxima local donnée ci-dessus.
+            Signature de la fonction (n'oubliez pas de la réécrire) :
+
+            .. code-block:: python
+
+                def maximaLocaux(tab)
+        default: ''
+    q2:
+        header: |-
+            Pour cette question vous pouvez considérer que vous disposez d’une fonction ``valeurDroite`` (déjà écrite) qui prend en
+            argument les coordonnées de deux points :math:`(x_A, y_A)` et :math:`(x_B, y_B)` ainsi qu’un nombre et qui renvoie la valeur (hauteur y) au point
+            de la droite passant par les deux points :math:`(x_A, y_A)` et :math:`(x_B, y_B)`. Rappelons que l’équation de la droite passant par les deux points
+            :math:`(x_A, y_A)` et :math:`(x_B, y_B)` est définie par :
+
+            .. math::
+
+               \frac{y-y_A}{x-x_A}=\frac{y_A-y_B}{x_A-x_B}
+
+            En isolant le y dans cette équation, on obtient la hauteur de la droite au point d’abscisse x. Vous devez donc
+            utiliser la fonction suivante :
+
+            .. code-block:: python
+
+                def valeurDroite(xA, yA, xB, yB, x)
+
+            ----
+
+            Ici, nous vous demandons d’écrire une fonction ``estVallee`` prenant en argument une liste d’entiers ``tab`` ainsi que deux nombres entiers ``a`` et ``b`` et renvoyant un booléen indiquant si l’intervalle d’indices ``[a,b]`` dans la liste ``tab`` est une vallée (**true**) ou non (**false**).
+
+            La méthode ``estVallee`` doit utiliser la fonction ``valeurDroite``, et n’oubliez pas de vous référer à la définition de vallée donnée précédemment.
+
+            Signature de la fonction (n'oubliez pas de la réécrire) :
+
+            .. code-block:: python
+
+                def estVallee(tab, a, b)
+        type: code
+        name: Vallée
+        language: python
+        default: ''
+    q3:
+        language: python
+        default: ''
+        name: Plus grande vallée
+        header: |-
+            Enfin, nous vous demandons d’implémenter la fonction principale ``plusGrandeVallee`` prenant en argument une liste d’entiers ``tab`` et renvoyant une liste d’entiers contenant les indices de début et de fin de la **plus grande** vallée identifiée au sein de cette liste ``tab``. Pour le cas où il n'y a pas de vallée, la fonction ``plusGrandeVallee`` doit retourner la liste ``[0,0]``
+            La fonction ``plusGrandeVallee`` doit utiliser les fonctions ``maximaLocaux`` et ``estVallee`` décrites ci-dessus. Les sous-questions étant indépendantes, vous pouvez utiliser les fonctions ``maximaLocaux`` et ``estVallee`` grâce à leurs signatures données ci-dessus, même si vous n’avez pas réussi à répondre à ces sous-questions.
+
+            Signature de la fonction (n'oubliez pas de la réécrire) :
+
+            .. code-block:: python
+
+                def plusGrandeVallee(tab)
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

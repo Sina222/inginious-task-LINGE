@@ -10,7 +10,7 @@ context: |
 
     .. code-block:: python
 
-        def __init__(self, jour, mois, annee):
+        def __init__(self, jour, mois, annee)
 
     Cette fonction est le constructeur de la classe ``Date``. Elle initialise la date à un jour, un mois et une année, tous
     spécifiés en valeurs entières conformes au décompte du calendrier grégorien – une période de 28, 29, 30 ou 31
@@ -31,7 +31,7 @@ context: |
 
     .. code-block:: python
 
-        def hier(self):
+        def hier(self)
 
     Cette fonction permet de reculer d’un jour dans le calendrier une fois la date initialisée. Cette fonction ne doit
     rien afficher, elle doit uniquement modifier des valeurs de variables de l’objet de type ``Date``.
@@ -48,15 +48,15 @@ context: |
 
     .. code-block:: python
 
-        def getJour(self):
+        def getJour(self)
 
     .. code-block:: python
 
-        def getMois(self):
+        def getMois(self)
 
     .. code-block:: python
 
-        def getAnnee(self):
+        def getAnnee(self)
 
     Ces fonctions sont utilisées pour accéder à leurs variables d'instance respectives.
 

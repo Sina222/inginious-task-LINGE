@@ -10,13 +10,12 @@ import q
 
 
 DATES_INPUT = [
-    {"jour": 26, "mois": 5, "annee": 2042},
     {"jour": 14, "mois": 7, "annee": 1789},
     {"jour": 1, "mois": 8, "annee": 2019},
     {"jour": 1, "mois": 7, "annee": 2019},
     {"jour": 1, "mois": 3, "annee": 2019},
     {"jour": 1, "mois": 3, "annee": 2020},
-    {"jour": 31, "mois": 12, "annee": 2000}
+    {"jour": 1, "mois": 1, "annee": 2000}
 ]
 
 
@@ -48,7 +47,8 @@ class TestDate(unittest.TestCase):
                 dates["jour"], dates["mois"], dates["annee"])
             date_corr.hier()
 
-            message = "Pour la date {}/{}/{}, le résultat attendu est : {}/{}/{} mais vous avez répondu {}/{}/{}".format(dates["jour"], dates["mois"], dates["annee"], date_corr.getJour(), date_corr.getMois(), date_corr.getAnnee(), date_student.getJour(), date_student.getMois(), date_student.getAnnee())
+            message = "Pour la date {}/{}/{}, le résultat attendu est : {}/{}/{} mais votre code a produit {}/{}/{}".format(dates["jour"], dates["mois"], dates["annee"], date_corr.getJour(
+            ), date_corr.getMois(), date_corr.getAnnee(), date_student.getJour(), date_student.getMois(), date_student.getAnnee())
 
             self.assertEqual(date_student.getJour(),
                              date_corr.getJour(), _(message))
