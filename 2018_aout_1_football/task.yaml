@@ -1,0 +1,59 @@
+accessible: true
+author: Bastien NOTHOMB
+context: |-
+    Durant un match international de football, après avoir malencontreusement trébuché sur son lacet, Neymar s’écroule dans le rectangle adverse et le Brésil obtient un penalty. Votre objectif est d’écrire une fonction Arret définissant le saut que le gardien devra réaliser afin d’arrêter le tir sur base de l’image caméra. Pour ce faire, votre fonction devra retourner un vecteur de taille 3 de type « float » ayant la forme suivante : ``(direction, angle, distance)``
+
+    Où :
+
+    1. « direction » contiendra –1.0 si le gardien doit sauter du côté gauche du but, 1.0 s’il doit sauter du côté droit du but et 0.0 si le ballon est juste au-dessus de lui (voir schéma) ;
+    2. « angle » contiendra l’angle du ballon (par rapport au sol et sur base de la position du gardien, en degrés), avec lequel le gardien devra sauter. Les valeurs vont de 0 à 90 degrés ;
+    3. « distance » contiendra la longueur du saut à effectuer en pixels.
+
+    Le cadre du but a une hauteur H et une longueur L, et est représenté par une matrice (tableau de caractères) BUT en deux dimensions de taille H x L (voir exemple). Cette matrice représente l’image caméra pré-traitée afin de ne visionner que le gardien et le ballon.
+
+    Cette matrice contient une fois le caractère ‘B’ aux coordonnées auxquelles le ballon franchira le cadre, une fois le caractère ‘G’ là où se situe le gardien, et le caractère ‘X’ dans le restant du tableau. Notez que le gardien ne lévite pas, sa hauteur (position par rapport à l’axe H) sera toujours égale à zéro. Par ailleurs, les indices du tableau représentent la hauteur H (premier indice, de ligne) et la longueur L (second indice, de colonne) en pixels, comme représenté dans l’exemple ci-dessous. Le but est visionné de l’arrière, c’est-à-dire qu’il représente ce que le gardien voit (le point de vue du gardien).
+
+    Sur base des informations contenues dans ce tableau, votre objectif sera de calculer la direction qu’il doit choisir, l’angle (en degrés et par rapport à la position du gardien au sol) avec lequel il doit sauter, et enfin la distance (en pixels) qui sépare le gardien du ballon. Par ailleurs, il ne faut pas effectuer de vérification dans le programme : nous supposons que les données (tableau, etc) sont correctes et compatibles.
+
+    .. image:: 2018_aout_1_football/img.png
+              :align:  center
+              :scale: 90
+
+
+    **Attention** : Les fonctions trigonométriques en Python fonctionnent en radian. Pensez à faire la conversion en degrés. Voici un exemple d’utilisation de ces fonctions.
+
+    .. code-block:: python
+
+            double radians = 1.0;
+
+            double sine = Math.sin(radians);
+            double cosine = Math.cos(radians);
+            double tan = Math.tan(radians);
+
+            double asine = Math.asin(sine);
+            double acosine = Math.acos(cosine);
+            double atan = Math.atan(tan);
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    memory: '100'
+    time: '3'
+name: 2018 Aout Problème 1 - Football
+network_grading: false
+order: 0
+problems:
+    thecode:
+        type: code
+        default: ''
+        language: python
+        name: Hello World !
+        header: Implémentez la fonction ``arret(but)`` en Python.
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

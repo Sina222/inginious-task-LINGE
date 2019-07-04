@@ -1,0 +1,60 @@
+accessible: true
+author: Alain Mbungu
+context: |-
+    Ecrire une méthode **examen** ayant comme paramètre un tableau notes contenant les points totaux des élèves d'une classe (on considère que la note de 100% est impossible). La méthode devra :
+
+    * Rechercher et afficher la note maximale, la note minimale et la moyenne des notes.
+
+    * A partir des points des élèves contenus dans le tableau notes, établir un tableau points contenant 10 éléments et composé de la façon suivante:
+
+    | **points[9]** contient le nombre de notes comprises entre 90 et 99
+    | **points[8]** contient le nombre de notes comprises entre 80 et 89
+    | **points[7]** contient le nombre de notes comprises entre 70 et 79
+    | **...**
+    | **points[0]** contient le nombre de notes comprises entre 0 et 9
+
+
+    * Renvoyer ce tableau points.
+
+    *Exemple de sortie* si notes=[6,7,8,9,10,11,12,24,50,34,67,99,48,58,28,58,87,75]
+
+    .. code-block:: python
+
+        La note maximale est 99
+        La note minimale est 6
+        La moyenne des notes est 38.38889
+        il y a 4 notes entre 0 et 9
+        il y a 3 notes entre 10 et 19
+        il y a 2 notes entre 20 et 29
+        il y a 1 notes entre 30 et 39
+        il y a 1 notes entre 40 et 49
+        il y a 3 notes entre 50 et 59
+        il y a 1 notes entre 60 et 69
+        il y a 1 notes entre 70 et 79
+        il y a 1 notes entre 80 et 89
+        il y a 1 notes entre 90 et 99
+
+    **!!! Respectez ce format de sortie, un seul espace sépare les mots dans les 3 premières lignes, pas besoin de modifier l'affichage de la liste et d'arondir les valeurs, sinon vous vous aurez automatiquement zéro !!!**
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    memory: '100'
+    output: '2'
+name: TP6Ex3 Examen Septembre 2009
+network_grading: false
+problems:
+    q1:
+        default: ''
+        type: code
+        language: ''
+        header: La méthode ``examen(notes)``
+        name: Implémentatation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

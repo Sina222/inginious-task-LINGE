@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
+import df
+@df.f
+def f(x):
+    return df.f(x)
+
+@@thecode@@
