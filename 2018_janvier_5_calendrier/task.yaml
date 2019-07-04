@@ -1,0 +1,89 @@
+accessible: true
+author: 'Maxime Postaire '
+context: |
+    Dans cette question, nous vous demandons de modéliser la gestion d’un calendrier grégorien. Pour cela, vous
+    allez devoir créer une classe ``Date``. Chaque instance de ``Date`` contient trois variables **privées** entières ``jour``,
+    ``mois`` et ``annee``. De plus, elle est également constituée des fonctions suivantes :
+
+    Première fonction :
+    -------------------
+
+    .. code-block:: python
+
+        def __init__(self, jour, mois, annee)
+
+    Cette fonction est le constructeur de la classe ``Date``. Elle initialise la date à un jour, un mois et une année, tous
+    spécifiés en valeurs entières conformes au décompte du calendrier grégorien – une période de 28, 29, 30 ou 31
+    jours (voir tableau ci-dessous) forme un mois, et une période de douze mois forme une année. Nous supposons
+    que les valeurs d’initialisation ne sont pas aberrantes. Il ne faudra donc pas les vérifier.
+
+    +---------+-------+-------+----+-----------+----+----------+----+
+    |         | 31    | avril | 30 | juillet   | 31 | octobre  | 31 |
+    | janvier |       |       |    |           |    |          |    |
+    +---------+-------+-------+----+-----------+----+----------+----+
+    | février | 28/29 | mai   | 31 | août      | 31 | novembre | 30 |
+    +---------+-------+-------+----+-----------+----+----------+----+
+    | mars    | 31    | juin  | 30 | septembre | 30 | décembre | 31 |
+    +---------+-------+-------+----+-----------+----+----------+----+
+
+    Deuxième fonction :
+    -------------------
+
+    .. code-block:: python
+
+        def hier(self)
+
+    Cette fonction permet de reculer d’un jour dans le calendrier une fois la date initialisée. Cette fonction ne doit
+    rien afficher, elle doit uniquement modifier des valeurs de variables de l’objet de type ``Date``.
+
+    Exemple : Si la date est le 01/01/2018, la fonction hier passera cette date au 31/12/2017.
+
+    **!!! Prenez bien en compte les cas particuliers de changement de mois et d’année ainsi que le cas d’une année bissextile !!!**
+
+    Rappel: Une année bissextile est une année à 366 jours (29 février compris) si elle est divisible par 4 et non
+    divisible par 100 ou bien si elle est divisible par 400.
+
+    Getters :
+    ---------
+
+    .. code-block:: python
+
+        def getJour(self)
+
+    .. code-block:: python
+
+        def getMois(self)
+
+    .. code-block:: python
+
+        def getAnnee(self)
+
+    Ces fonctions sont utilisées pour accéder à leurs variables d'instance respectives.
+
+    ----
+
+    Nous vous demandons donc d'écrire la classe Date en fonction de ces instructions. N'oubliez pas d'indiquer
+    clairement ``class Date:``, ainsi que tout ce qui se trouverait avant ou après la déclaration de la classe.
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    output: '2'
+    memory: '100'
+name: '2018 Janvier - Problème 5 : Calendrier grégorien'
+network_grading: false
+problems:
+    q1:
+        language: python
+        name: 'Implémentation :'
+        type: code
+        header: ''
+        default: ''
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
