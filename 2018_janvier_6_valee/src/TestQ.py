@@ -67,7 +67,7 @@ class TestValee(unittest.TestCase):
             sol_q1 = sol.maximaLocaux(i["table"])
 
             self.assertEqual(student_q1, sol_q1, "@1@: " + _(
-                "Pour le tableau : {}\nvotre code a produit : {}\nmais le résulat attendu est : {}".format(i["table"], student_q1, sol_q1)))
+                "Pour la liste : {}\nvotre code a produit : {}\nmais le résulat attendu est : {}".format(i["table"], student_q1, sol_q1)))
 
     def test_q2(self):
         sol = corr.EXAM_JAN2018_Q3()
@@ -82,7 +82,7 @@ class TestValee(unittest.TestCase):
                 sol_q2 = sol.estVallee(i["table"], interval[0], interval[1])
 
                 self.assertEqual(student_q2, sol_q2, "@2@: " + _(
-                    "Pour le tableau : {}\net a={}, b={}\nvotre code a produit : {}\nmais le résulat attendu est : {}".format(i["table"], interval[0], interval[1], student_q2, sol_q2)))
+                    "Pour la liste : {}\net a={}, b={}\nvotre code a produit : {}\nmais le résulat attendu est : {}".format(i["table"], interval[0], interval[1], student_q2, sol_q2)))
 
     def test_q3(self):
         sol = corr.EXAM_JAN2018_Q3()
@@ -95,7 +95,7 @@ class TestValee(unittest.TestCase):
             sol_q3 = sol.plusGrandeVallee(i["table"])
 
             self.assertEqual(student_q3, sol_q3, "@3@: " + _(
-                "Pour le tableau : {}\nvotre code a produit : {}\nmais le résulat attendu est : {}".format(i["table"], student_q3, sol_q3)))
+                "Pour la liste : {}\nvotre code a produit : {}\nmais le résulat attendu est : {}".format(i["table"], student_q3, sol_q3)))
 
 
 if __name__ == '__main__':

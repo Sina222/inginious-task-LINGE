@@ -69,18 +69,18 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
-    memory: '100'
     time: '30'
     output: '2'
-name: '2018 Session Janvier - Problème 5 : Calendrier grégorien'
+    memory: '100'
+name: '2018 Janvier - Problème 5 : Calendrier grégorien'
 network_grading: false
 problems:
     q1:
         language: python
-        header: ''
         name: 'Implémentation :'
-        default: ''
         type: code
+        header: ''
+        default: ''
 stored_submissions: 0
 submission_limit:
     amount: -1

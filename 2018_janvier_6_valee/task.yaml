@@ -52,7 +52,7 @@ limits:
     time: '30'
     output: '2'
     memory: '100'
-name: '2018 Session Janvier - Problème 6 : Plus grande vallée'
+name: '2018 Janvier - Problème 6 : Plus grande vallée'
 network_grading: false
 problems:
     q1:
