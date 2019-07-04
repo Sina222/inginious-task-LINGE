@@ -21,7 +21,7 @@ limits:
     time: '30'
     output: '2'
     memory: '100'
-name: 'TP3Ex2Supp'
+name: 'TP3 Exercice 2 supplémentaire'
 network_grading: false
 order: 81
 problems:

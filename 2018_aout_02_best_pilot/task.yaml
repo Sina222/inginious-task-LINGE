@@ -27,7 +27,7 @@ limits:
     time: '300'
     output: '2'
     memory: '100'
-name: 'Session 7 : Best pilot'
+name: '2018 aout Problème 2 - meilleur pilote'
 network_grading: false
 order: 80
 problems:

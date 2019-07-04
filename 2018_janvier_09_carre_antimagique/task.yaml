@@ -25,7 +25,7 @@ limits:
     time: '30'
     output: '2'
     memory: '100'
-name: 'Session 7 : Carré antimagique'
+name: '2018 janvier Problème 9 - Carré antimagique'
 network_grading: false
 order: 81
 problems:

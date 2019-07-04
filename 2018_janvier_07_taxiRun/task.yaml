@@ -3,7 +3,7 @@ author: Alexandre Fiset
 context: |-
     Un chauffeur de taxi a enregistré dans un tableau de nombres entier "**M**", à deux dimension les coordonnées des points de départ et d'arrivée des différentes courses qu'il a réalisées dans la journée.
 
-    .. image:: 2018_Janvier_07/table.png
+    .. image:: 2018_janvier_07_taxiRun/table.png
 
     Afin de connaitre son gain du jour, il doit calculer la distance total qu'il a parcouru sur l'ensemble de ses courses et la multiplier par une constante réelle "**P**" exprimée en $/km. Néanmoins, la distance utilisée dans ce secteur n'est pas une distance euclidienne classiquemais une distance de Manhattan.
 
@@ -27,7 +27,7 @@ limits:
     time: '30'
     output: '2'
     memory: '100'
-name: 'Session 7 : A Taxi&Run'
+name: '2018 janvier Problème 07 - Taxi&Run'
 network_grading: false
 order: 81
 problems:
