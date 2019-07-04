@@ -1,0 +1,41 @@
+accessible: 2018-11-02 12:00:00/
+author: Bastien Nothomb
+context: |
+    Écrivez une méthode qui demande à l’utilisateur d’entrer un nombre arbitraire d’entiers compris entre 0 et 9. L’utilisateur doit entrer -1 s’il a fini d’introduire les chiffres.
+    Le nombre d’occurrences pour chaque nombre est ensuite affiché sur le terminal sous cette forme-là
+
+    .. code-block:: python
+
+        Entrer les nombres (compris entre 0 et 9, -1 pour quitter) :0
+        6
+        5
+        -1
+        le nombre 0 est introduit 1 fois
+        le nombre 5 est introduit 1 fois
+        le nombre 6 est introduit 1 fois
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    memory: '100'
+    output: '2'
+    time: '30'
+name: TP4 exercice 3 supplémentaire - Comptage
+network_grading: false
+order: 73
+problems:
+    q1:
+        name: Implémentation
+        language: python
+        default: |-
+            def compte():
+                #TODO
+        header: Créez la fonction ``compte()`` en Python.
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
