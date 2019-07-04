@@ -1,0 +1,46 @@
+accessible: true
+author: Shafiei Sina
+context: |+
+    Écrivez une méthode, appelée ``inverse``, ayant comme paramètre d’entrée deux tableaux d’entiers de même taille (message d’erreur sinon), la méthode ne renvoie rien mais va permuter le contenu des deux tableaux et afficher leur contenu à l’écran.
+
+    *Pour exemple*
+
+    Avec les 2 tableaux:
+
+    .. code-block:: python
+
+        a = [1,2,3,4,5]
+        b = [6,7,8,9,10]
+
+    Le résultat affiché sera:
+
+    .. code-block:: python
+
+        A =
+        6 7 8 9 10
+        B =
+        1 2 3 4 5
+
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    output: '2'
+    memory: '100'
+name: TP4 exercice 2 supplémentaire
+network_grading: false
+problems:
+    studentcode:
+        default: ''
+        name: Implémentation
+        type: code
+        header: ''
+        language: python
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
