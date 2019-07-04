@@ -7,7 +7,7 @@ context: |-
     degré d’affinité entre les deux nœuds de part et d’autre du lien. Les nœuds du graphe (représentant les page web)
     sont numérotés séquentiellement (noeud 1, 2, ..., "*n*"). Voici un exemple de graphe à trois nœuds.
 
-    .. image:: 2018_aout_3_PageRank/pagereank.png
+    .. image:: 2018_aout_3_pagerank/pagereank.png
             :align:  center
             :width: 700
 
@@ -32,7 +32,7 @@ context: |-
     l’algorithme à l’itération t = 0, vous allez devoir utiliser le vecteur de degré entrant normalisé (la somme de ses
     éléments doit être égale à un) comme premier score, comme vous pouvez le voir dans l’exemple ci-dessous :
 
-    .. image:: 2018_aout_3_PageRank/convergence.png
+    .. image:: 2018_aout_3_pagerank/convergence.png
             :align: center
             :width: 700
 
@@ -48,37 +48,37 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
-    time: '30'
     memory: '100'
+    time: '30'
     output: '2'
-name: 2018 Août Problème 3 PageRank
+name: 2018 Août Problème 3 - PageRank
 network_grading: false
 problems:
     q1:
-        default: ''
+        language: python
         type: code
-        language: ''
+        name: Implémentation
         header: La fonction ``ProbabilityMatrix(A)`` permettant de calculer la matrice
             de probabilités de transition sur base de la matrice d’adjacence **A**
             et du vecteur de degré sortant.
-        name: Implémentation
-    q2:
-        language: ''
         default: ''
-        type: code
+    q2:
+        name: Implémentation
+        language: python
+        default: ''
         header: La fonction ``produitMatriceVecteur(P,d)`` qui renvoie un vecteur
             contenant le produit d’une matrice **P** par un vecteur **d**. Pour rappel,
             une matrice peut être multipliée par un vecteur si et seulement si le
             nombre de colonnes de la matrice est égal au nombre d’éléments du vecteur.
-        name: Implémentation
+        type: code
     q3:
+        default: ''
+        language: python
+        type: code
         name: Implémentation
         header: |-
             La fopnction ``PageRankScore(A)`` qui renvoie un vecteur contenant le score PageRank de chaque nœud sur base de la matrice
             d’adjacence. Vous pouvez considérer que le score converge si la somme de la différence absolue des éléments du vecteur score au temps *t* et au temps *t–1* est inférieure à 0.000001.
-        language: ''
-        type: code
-        default: ''
 stored_submissions: 0
 submission_limit:
     amount: -1

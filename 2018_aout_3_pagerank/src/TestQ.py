@@ -5,7 +5,7 @@
 import unittest
 from q import PageRank as PageRankStudent
 
-from PageRank import *
+from CorrQ import *
 import random as rd 
 rd.seed(2019)
 

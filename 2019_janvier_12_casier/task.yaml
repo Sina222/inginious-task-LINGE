@@ -48,42 +48,42 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
+    time: '30'
     output: '2'
     memory: '100'
-    time: '30'
 name: 2019 Janvier Problème 12 - Casier de bières
 network_grading: false
 problems:
     q1:
-        language: ''
-        default: ''
-        header: 'Le constructeur ``__init__(bac)`` '
-        type: code
-        name: Impléméntation
-    q2:
         language: python
-        header: |
-            Une fonction ``party(self,nom)`` permettant de parcourir le casier et d’en boire toutes les bières portant le nom fourni en argument par l’utilisateur (seules les bières pleines peuvent être bues).
+        header: 'Le constructeur ``__init__(bac)`` '
+        default: ''
+        name: Impléméntation
+        type: code
+    q2:
         name: Implémentation
         type: code
+        language: python
         default: ''
+        header: |
+            Une fonction ``party(self,nom)`` permettant de parcourir le casier et d’en boire toutes les bières portant le nom fourni en argument par l’utilisateur (seules les bières pleines peuvent être bues).
     q3:
+        type: code
+        language: python
         header: Une fonction ``avgAlcool(self)`` permettant de calculer le taux moyen
             d’alcool contenu dans les bières (pleines) du casier. Si le casier ne
             contient que des bières vides, votre fonction doit renvoyer zéro.
         name: Implémentation
-        type: code
         default: ''
-        language: python
     q4:
-        default: ''
-        language: python
-        name: Implémentation
         header: Une fonction ``isStronger(self,tab)`` qui renverra **true** si le
             casier sur lequel est appliqué la fonction possède un taux d’alcool moyen
             ( avgAlcool ) strictement supérieur à tous les autres casiers fournis
             en argument dans un tableau, et **false** sinon.
+        language: python
         type: code
+        default: ''
+        name: Implémentation
 stored_submissions: 0
 submission_limit:
     amount: -1

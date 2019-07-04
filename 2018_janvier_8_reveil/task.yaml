@@ -39,18 +39,18 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
-    output: '2'
     time: '30'
+    output: '2'
     memory: '100'
-name: '2018 Janvier Probleme 8 : Reveil'
+name: 2018 Janvier Problème 8 - Réveil
 network_grading: false
 problems:
     studentcode:
         language: python
         name: Implémentation
-        default: ''
-        type: code
         header: Implémentez la classe ``Reveil`` en Python.
+        type: code
+        default: ''
 stored_submissions: 0
 submission_limit:
     amount: -1
