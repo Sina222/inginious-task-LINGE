@@ -1,0 +1,87 @@
+accessible: true
+author: Alain Mbungu
+context: |-
+    Dans cette question, nous allons vous demander d’implémenter l’algorithme **PageRank** « de base ». Cet algorithme a été introduit avec la venue du moteur de recherche Google pour classer les pages web. Le PageRank permet de calculer la « popularité » ou le « score » d’une page web à l’aide des liens qu’elle possède
+    avec les autres pages web. C’est en partie grâce à cet algorithme que Google peut fournir à un utilisateur une liste de sites web classés (par ordre décroissant) selon leur popularité PageRank répondant aux critères de sa recherche : les sites obtenant les scores PageRank les plus élevés sont présentés en premier.
+    Avant d’aller plus loin, nous allons d’abord introduire certains concepts de théorie des graphes qui vous seront nécessaires pour implémenter l’algorithme. Afin de modéliser les pages web et les liens qu’elles possèdent entre elles, vous aurez besoin de la notion de graphe. Un graphe est un ensemble de n nœuds qui sont reliés entre eux par des (hyper)liens. A chacun de ces liens, on peut associer un poids non-négatif qui permet de représenter le
+    degré d’affinité entre les deux nœuds de part et d’autre du lien. Les nœuds du graphe (représentant les page web)
+    sont numérotés séquentiellement (noeud 1, 2, ..., "*n*"). Voici un exemple de graphe à trois nœuds.
+
+    .. image:: 2018_aout_3_PageRank/pagereank.png
+            :align:  center
+            :width: 700
+
+    Ce graphe peut être représenté sous forme matricielle à l’aide d’une matrice d’adjacence **A**, de taille n x n, où l’élément sera égal au degré d’affinité (par exemple le nombre d’hyperliens présents sur la page i et pointant vers la page j) entre le nœud numéro i et le nœud numéro j si ce lien existe, ou 0 si ce lien n’existe pas (0
+    hyperliens). Dans notre exemple, la page 2 possède trois liens vers la page 1. Sur base de cette matrice, nous
+    pouvons définir le vecteur de degré entrant comme la somme des éléments de chaque colonne de la matrice **A**.
+    Les éléments de ce vecteur représentent le nombre de liens qui entrent dans chaque nœud. De manière analogue,
+    nous pouvons définir le vecteur de degré sortant comme la somme des éléments de chaque ligne de la matrice **A**.
+    Les éléments de ce vecteur représentent le nombre de liens qui sortent de chaque nœud. De plus, en divisant
+    chaque ligne de la matrice d’adjacence **A** par la ligne correspondante du vecteur de degré sortant , vous
+    obtiendrez la matrice de probabilités de transition **P** dont chaque élément correspond à la probabilité de passer
+    du nœud i au nœud j lorsqu’on « surfe » sur le web et que l’on choisit la prochaine page à consulter au hasard
+    parmi les liens disponibles sur cette page.
+
+    Afin d’obtenir les scores PageRank contenus dans le tableau à une dimension score, vous devez utiliser un
+    algorithme itératif nommé « power method ». Cet algorithme consiste à répéter l’équation ci-dessous jusqu’à
+    convergence du vecteur de scores, en d’autres termes jusqu’à ce que les scores à l’itération t soient
+    (approximativement) les même que les scores à l’itération t–1.
+    où est la multiplication matrice-vecteur. Cette équation consiste à simplement multiplier la transposée (T) de la
+    matrice de probabilités de transition avec le vecteur de scores obtenu à l’itération précédente. Pour rappel, la
+    transposée de la matrice P est la matrice dont les lignes contiennent les colonnes de **P**. Afin d’initialiser
+    l’algorithme à l’itération t = 0, vous allez devoir utiliser le vecteur de degré entrant normalisé (la somme de ses
+    éléments doit être égale à un) comme premier score, comme vous pouvez le voir dans l’exemple ci-dessous :
+
+    .. image:: 2018_aout_3_PageRank/convergence.png
+            :align: center
+            :width: 700
+
+
+
+    **!!! IL EST DONC INUTILE D’IMPLEMENTER LES FONCTIONS CI-DESSOUS !!!**
+
+    * ``OutdegreeVector(A)`` : cette méthode permet de calculer le vecteur de degré sortant sur base de la matrice d’adjacence et renvoie ce vecteur.
+    * ``IndegreeVector(A)``: cette méthode permet de calculer le vecteur de degré entrant sur base de la matrice d’adjacence et renvoie ce vecteur.
+    * ``Transpose(P)``: cette fonction permet de calculer la transposée d’une matrice et renvoie cette transposée.
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    memory: '100'
+    output: '2'
+name: 2018 Août Problème 3 PageRank
+network_grading: false
+problems:
+    q1:
+        default: ''
+        type: code
+        language: ''
+        header: La fonction ``ProbabilityMatrix(A)`` permettant de calculer la matrice
+            de probabilités de transition sur base de la matrice d’adjacence **A**
+            et du vecteur de degré sortant.
+        name: Implémentation
+    q2:
+        language: ''
+        default: ''
+        type: code
+        header: La fonction ``produitMatriceVecteur(P,d)`` qui renvoie un vecteur
+            contenant le produit d’une matrice **P** par un vecteur **d**. Pour rappel,
+            une matrice peut être multipliée par un vecteur si et seulement si le
+            nombre de colonnes de la matrice est égal au nombre d’éléments du vecteur.
+        name: Implémentation
+    q3:
+        name: Implémentation
+        header: |-
+            La fopnction ``PageRankScore(A)`` qui renvoie un vecteur contenant le score PageRank de chaque nœud sur base de la matrice
+            d’adjacence. Vous pouvez considérer que le score converge si la somme de la différence absolue des éléments du vecteur score au temps *t* et au temps *t–1* est inférieure à 0.000001.
+        language: ''
+        type: code
+        default: ''
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
