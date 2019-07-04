@@ -12,7 +12,7 @@ context: |-
     4, 2, 1, 2}`` et la représentation de cette liste dans le plan cartésien, les indices du tableau étant représentés sur
     l’axe X et les valeurs correspondantes (éléments de la liste) étant représentées sur l’axe Y (*Figure 1*).
 
-    .. image:: 2018_janvier_6_valee/figure1.png
+    .. image:: 2018_janvier_06_valee/figure1.png
         :height: 350px
 
     **Définition d’une vallée :**
@@ -23,7 +23,7 @@ context: |-
     compris entre les indices :math:`i` et :math:`j` se trouvent toujours sur ou sous la droite reliant les deux points :math:`(i, tab[i])` et :math:`(j, tab[j])`. La taille d’une vallée est donnée par la valeur absolue de la différence entre les deux positions :math:`i` et :math:`j`. Afin
     d’illustrer cette définition, considérons la même liste d’entiers que ci-dessus, cette fois représenté en *Figure 2*.
 
-    .. image:: 2018_janvier_6_valee/figure2.png
+    .. image:: 2018_janvier_06_valee/figure2.png
         :height: 350px
 
     La liste contient plusieurs vallées, dont certaines sont représentées sur la *Figure 2*. Par exemple, l’intervalle

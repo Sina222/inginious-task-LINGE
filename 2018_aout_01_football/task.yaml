@@ -15,7 +15,7 @@ context: |-
 
     Sur base des informations contenues dans ce tableau, votre objectif sera de calculer la direction qu’il doit choisir, l’angle (en degrés et par rapport à la position du gardien au sol) avec lequel il doit sauter, et enfin la distance (en pixels) qui sépare le gardien du ballon. Par ailleurs, il ne faut pas effectuer de vérification dans le programme : nous supposons que les données (tableau, etc) sont correctes et compatibles.
 
-    .. image:: 2018_aout_1_football/img.png
+    .. image:: 2018_aout_01_football/img.png
               :align:  center
               :scale: 90
 
@@ -38,18 +38,18 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
-    memory: '100'
     time: '3'
     output: '2'
+    memory: '100'
 name: 2018 Août Problème 1 - Football
 network_grading: false
 problems:
     thecode:
-        name: Hello World !
-        language: python
-        header: Implémentez la fonction ``arret(but)`` en Python.
         type: code
         default: ''
+        name: Hello World !
+        header: Implémentez la fonction ``arret(but)`` en Python.
+        language: python
 stored_submissions: 0
 submission_limit:
     amount: -1
