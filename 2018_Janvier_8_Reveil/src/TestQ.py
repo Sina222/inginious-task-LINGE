@@ -57,6 +57,9 @@ class TestController(unittest.TestCase):
         if not hasattr(q.Reveil, 'nouvelleHeure'):
             self.fail(_("La methode 'nouvelleHeure()' n´est pas définie."))
 
+
+    """Test case pour tester la methode nouvelleHeure()."""
+
     def test_cases(self):
         randSec = random.randint(0, 59)
         randMin = random.randint(0, 59)
