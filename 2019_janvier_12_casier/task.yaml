@@ -1,0 +1,92 @@
+accessible: true
+author: Alain Mbungu
+context: |-
+    Pour cette question, il vous est demandé d’écrire la classe ``Casier`` , dont chaque instance représentera un casier
+    de bières. La classe ``Casier`` ne dispose que d’un seul attribut ``bac`` , défini comme un tableau (2 dimensions)
+    contenant des objets ``Biere`` . La classe ``Biere`` **est déjà entièrement implémentée**, vous ne devez donc **PAS**
+    l’écrire.
+
+    Chaque objet ``Biere`` dispose des attributs et fonctions suivants:
+
+    **Attributs**:
+
+    * *nom* : le nom de la bière ;
+    * *alcool* : le taux d’alcool de la bière ;
+    * *pleine* : ``True`` si la bouteille est pleine, ``False`` si elle est vide (on considère qu’une bouteille ne peut être que soit pleine, soit vide si elle a déjà été ouverte).
+
+    **Fonctions**:
+
+    * *Biere(nom, alcool)* : Constructeur. Par défaut, la bière est pleine.
+    * *boire()* : Permet de boire le contenu de la bière et, par conséquent, de vider celle-ci.
+    * *getNom()* : Permet de récupérer le nom de la bière.
+    * *getAlcool()* : Permet de récupérer le taux d’alcool de la bière.
+    * *estPleine()* : Permet de vérifier si la bière est pleine.
+
+    .. code-block:: python
+
+        class Casier:
+
+            def __init__(self,bac):
+                # à compléter
+
+            def party(self, nom):
+                # à compléter
+
+            def avgAlcool(self):
+                # à compléter
+                return ...
+
+
+            def isStronger(self,tab):
+                # à compléter
+                return ...
+
+            def getBac(self):
+                return self.__bac
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 2019 Janvier Problème 12 - Casier de bières
+network_grading: false
+problems:
+    q1:
+        language: ''
+        default: ''
+        header: 'Le constructeur ``__init__(bac)`` '
+        type: code
+        name: Impléméntation
+    q2:
+        language: python
+        header: |
+            Une fonction ``party(self,nom)`` permettant de parcourir le casier et d’en boire toutes les bières portant le nom fourni en argument par l’utilisateur (seules les bières pleines peuvent être bues).
+        name: Implémentation
+        type: code
+        default: ''
+    q3:
+        header: Une fonction ``avgAlcool(self)`` permettant de calculer le taux moyen
+            d’alcool contenu dans les bières (pleines) du casier. Si le casier ne
+            contient que des bières vides, votre fonction doit renvoyer zéro.
+        name: Implémentation
+        type: code
+        default: ''
+        language: python
+    q4:
+        default: ''
+        language: python
+        name: Implémentation
+        header: Une fonction ``isStronger(self,tab)`` qui renverra **true** si le
+            casier sur lequel est appliqué la fonction possède un taux d’alcool moyen
+            ( avgAlcool ) strictement supérieur à tous les autres casiers fournis
+            en argument dans un tableau, et **false** sinon.
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
