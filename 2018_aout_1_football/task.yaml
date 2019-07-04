@@ -38,10 +38,10 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
-    time: '3'
-    memory: '100'
     output: '2'
-name: 2018 Aout Probleme 1 - football
+    memory: '100'
+    time: '3'
+name: 2018 Aout Problème 1 - Football
 network_grading: false
 order: 0
 problems:

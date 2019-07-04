@@ -22,22 +22,22 @@ groups: false
 input_random: '0'
 limits:
     output: '2'
-    time: '30'
     memory: '100'
-name: 2019 Janvier Probleme 10-integrale
+    time: '30'
+name: 2019 Janvier Problème 10 - integrale
 network_grading: false
 problems:
     thecode:
         type: code
+        default: |-
+            def integrale(a,b,nbPoints):
+                return f(a)
+        language: python
         name: 'Intégration: méthode des trapèzes'
         header: |
             Nous vous demandons donc d’implémenter la méthode suivante :
             **integrale(a , b , nbPoints)**
             , qui intègre la fonction **f(x)** prenant en argument un nombre réel x et renvoie en sortie la valeur de la fonction f au point d’abscisse x.
-        default: |-
-            def integrale(a,b,nbPoints):
-                return f(a)
-        language: python
 stored_submissions: 0
 submission_limit:
     amount: -1
