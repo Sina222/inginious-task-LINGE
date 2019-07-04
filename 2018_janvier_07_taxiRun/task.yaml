@@ -1,0 +1,45 @@
+accessible: 2018-11-02 12:00:00/
+author: Alexandre Fiset
+context: |-
+    Un chauffeur de taxi a enregistré dans un tableau de nombres entier "**M**", à deux dimension les coordonnées des points de départ et d'arrivée des différentes courses qu'il a réalisées dans la journée.
+
+    .. image:: 2018_janvier_07_taxiRun/table.png
+
+    Afin de connaitre son gain du jour, il doit calculer la distance total qu'il a parcouru sur l'ensemble de ses courses et la multiplier par une constante réelle "**P**" exprimée en $/km. Néanmoins, la distance utilisée dans ce secteur n'est pas une distance euclidienne classiquemais une distance de Manhattan.
+
+    La distance de Manhattan entre deux points est définie par la formule suivante :
+
+    .. math:: d(A,B) = |X_B-X_A|+|Y_B-Y_A|
+
+    Nous vous demandons d'implémenter une fonction ``PayeTaxi(M,P)`` permettant de renvoyer un vecteur qui contient,d'une part, le gain du jours du chauffeur de taxi et, d'autre part, la course qui lui a rapporté le plus d'argent.
+
+    La matrice M pour 5 courses ressemble à :
+
+    .. code-block:: python
+
+        M = [[1, -6, -3, 3, -5], [2, 1, 9, -1, 4], [3, 2, 3, 1, 3], [4, 2, -4, -5, -10]]
+
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    output: '2'
+    memory: '100'
+name: '2018 janvier Problème 07 - Taxi&Run'
+network_grading: false
+order: 81
+problems:
+    q1:
+        language: python
+        name: Implémentation
+        header: Implémentez la fonction ``def PayeTaxi(M,P)`` en Python.
+        default: ''
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

@@ -1,0 +1,43 @@
+accessible: 2018-11-02 12:00:00/
+author: Alexandre Fiset
+context: |-
+    Un carré antimagique est une matrice carrée d’ordre ``n`` dont les sommes des diagonales, des lignes et des colonnes sont toutes différentes les unes des autres. De plus, ces sommes doivent former une suite arithmétique de raison 1 commençant à ``n``. Pour rappel, l’ordre d’une matrice carrée correspond à son nombre de lignes ou de colonnes.
+
+    exemple :
+
+    .. image:: 2018_janvier_09/exemple.png
+
+    La matrice du haut est carré mais elle n'est pas antimagique car plusieurs sommes valent la même chose. La matrice du bas est carréé et antimagique car les sommes sont toutes différentes et forme bien une suite arithmétique de raison 1 allant de 3 à 10.
+
+    Nous vous demandons d’implémenter une fonction ``estAntiMagique`` qui permet de vérifier si une matrice d’entiers est antimagique. Veillez à vérifier toutes les conditions précisées ci-dessus.
+
+    La matrice mat de dimension 3 et non antimagique ressemble à :
+
+    .. code-block:: python
+
+        mat = [[1, 6, 3, 3], [2, 1, 9, 4], [3, 2, 3, 5], [4, 2, 4, 5]]
+
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    output: '2'
+    memory: '100'
+name: '2018 janvier Problème 9 - Carré antimagique'
+network_grading: false
+order: 81
+problems:
+    q1:
+        language: python
+        name: Implémentation
+        header: Implémentez la fonction ``def estAntiMagique(mat)`` en Python.
+        default: ''
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

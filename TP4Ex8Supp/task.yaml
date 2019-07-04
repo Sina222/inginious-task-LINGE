@@ -1,0 +1,137 @@
+accessible: 2018-11-02 12:00:00/
+author: Alexandre Fiset
+context: |-
+    Dans la méthode main, il vous est demander de créer une liste. La méthode est composée de deux boucles :
+
+    Dans la première boucle, on demande à l’utilisateur d’entrer des prénoms qui seront stockés dans la liste (entrée vide pour quitter la boucle). Il vous es ensuite demandé d'afficher les prénoms dans l’ordre alphabétique.
+
+    Dans la deuxième boucle, on affiche à chaque fois la liste des prénoms, et l’utilisateur doit donner le numéro du prénom qu’il veut supprimer de la liste (-1 pour quitter).
+
+    Voici un exemple de scénariot possible :
+
+      .. code-block:: python
+
+                  Enter the name :Karadoc de Vannes
+                  0 : Karadoc de Vannes
+                  Enter the name :Perceval de Galles
+                  0 : Karadoc de Vannes
+                  1 : Perceval de Galles
+                  Enter the name :Léodagan de Carmélide
+                  0 : Karadoc de Vannes
+                  1 : Léodagan de Carmélide
+                  2 : Perceval de Galles
+                  Enter the name :Arthur Pendragon
+                  0 : Arthur Pendragon
+                  1 : Karadoc de Vannes
+                  2 : Léodagan de Carmélide
+                  3 : Perceval de Galles
+                  Enter the name :Merlin
+                  0 : Arthur Pendragon
+                  1 : Karadoc de Vannes
+                  2 : Léodagan de Carmélide
+                  3 : Merlin
+                  4 : Perceval de Galles
+                  Enter the name :La Dame du Lac
+                  0 : Arthur Pendragon
+                  1 : Karadoc de Vannes
+                  2 : La Dame du Lac
+                  3 : Léodagan de Carmélide
+                  4 : Merlin
+                  5 : Perceval de Galles
+                  Enter the name :Guenièvre
+                  0 : Arthur Pendragon
+                  1 : Guenièvre
+                  2 : Karadoc de Vannes
+                  3 : La Dame du Lac
+                  4 : Léodagan de Carmélide
+                  5 : Merlin
+                  6 : Perceval de Galles
+                  Enter the name :Arthur Pendragon
+                  0 : Arthur Pendragon
+                  1 : Arthur Pendragon
+                  2 : Guenièvre
+                  3 : Karadoc de Vannes
+                  4 : La Dame du Lac
+                  5 : Léodagan de Carmélide
+                  6 : Merlin
+                  7 : Perceval de Galles
+                  Enter the name :
+                  0 : Arthur Pendragon
+                  1 : Arthur Pendragon
+                  2 : Guenièvre
+                  3 : Karadoc de Vannes
+                  4 : La Dame du Lac
+                  5 : Léodagan de Carmélide
+                  6 : Merlin
+                  7 : Perceval de Galles
+                  Enter the id of the name to remove :1
+                  0 : Arthur Pendragon
+                  1 : Guenièvre
+                  2 : Karadoc de Vannes
+                  3 : La Dame du Lac
+                  4 : Léodagan de Carmélide
+                  5 : Merlin
+                  6 : Perceval de Galles
+                  Enter the id of the name to remove :0
+                  0 : Guenièvre
+                  1 : Karadoc de Vannes
+                  2 : La Dame du Lac
+                  3 : Léodagan de Carmélide
+                  4 : Merlin
+                  5 : Perceval de Galles
+                  Enter the id of the name to remove :6
+                  You are out of the list !
+                  0 : Guenièvre
+                  1 : Karadoc de Vannes
+                  2 : La Dame du Lac
+                  3 : Léodagan de Carmélide
+                  4 : Merlin
+                  5 : Perceval de Galles
+                  Enter the id of the name to remove :3
+                  0 : Guenièvre
+                  1 : Karadoc de Vannes
+                  2 : La Dame du Lac
+                  3 : Merlin
+                  4 : Perceval de Galles
+                  Enter the id of the name to remove :4
+                  0 : Guenièvre
+                  1 : Karadoc de Vannes
+                  2 : La Dame du Lac
+                  3 : Merlin
+                  Enter the id of the name to remove :3
+                  0 : Guenièvre
+                  1 : Karadoc de Vannes
+                  2 : La Dame du Lac
+                  Enter the id of the name to remove :2
+                  0 : Guenièvre
+                  1 : Karadoc de Vannes
+                  Enter the id of the name to remove :0
+                  0 : Karadoc de Vannes
+                  Enter the id of the name to remove :-1
+                  Goodbye !
+
+
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    output: '2'
+    memory: '100'
+name: 'TP4 Exercice 8 supplémentaire'
+network_grading: false
+order: 81
+problems:
+    q1:
+        language: python
+        name: Implémentation
+        header: Implémentez la methode ``def main()`` en Python.
+        default: ''
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
