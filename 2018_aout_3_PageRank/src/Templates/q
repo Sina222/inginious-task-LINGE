@@ -1,0 +1,38 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+class PageRank:
+	def OutdegreeVector(self,A):
+		Dout = [0 for i in range(len(A))]
+		for i in range(len(A[0])):
+			for j in range(len(A)):
+				Dout[i]=Dout[i]+A[i][j]
+		return Dout
+
+	def IndegreeVector(self, A):
+		Din = [0 for i in range(len(A))]
+		for i in range(len(A[0])):
+			for j in range(len(A)):
+				Din[i]=Din[i]+A[j][i]
+		return Din
+
+@	@q1@@
+	
+	def Transpose (selt, P):
+		Pt=[[0 for j in range(len(P[0]))] for i in range(len(P))]
+		for i in range(len(P)):
+			for j in range(len(P[0])):
+				Pt[i][j] = P[j][i]
+		return Pt
+
+@	@q2@@
+
+	def normalize (self, d):
+		c = [0 for i in range(len(d))]
+		sum=0.0
+		for j in range(len(d)):
+			sum = sum + d[j]
+		for j in range(len(d)):
+			c[j]=d[j]/sum
+		return c
+
+@	@q3@@
