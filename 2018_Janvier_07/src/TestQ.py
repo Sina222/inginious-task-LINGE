@@ -25,11 +25,11 @@ class TestExtractor(unittest.TestCase):
         # test for a random day
         corr_ans =  corr.PayeTaxi(M,P)
         stu_ans = q.PayeTaxi(M,P)
-        self.assertEqual(corr_ans, stu_ans,"The matrix used was M = {} and the price was P = {} .".format(M,P))
+        self.assertEqual(corr_ans, stu_ans,_("The matrix used was M = {} and the price was P = {} .").format(M,P))
         # test for an empty day
         corr_ans =  corr.PayeTaxi([],0)
         stu_ans = q.PayeTaxi([],0)
-        self.assertEqual(corr_ans, stu_ans,"The empty case was not tested, it should return {}".format(corr_ans))
+        self.assertEqual(corr_ans, stu_ans,_("The empty case was not tested, it should return {}").format(corr_ans))
 
 
 if __name__ == '__main__':

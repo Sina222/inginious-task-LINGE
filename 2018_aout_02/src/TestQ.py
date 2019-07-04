@@ -52,18 +52,18 @@ class TestExtractor(unittest.TestCase):
         # test random
         corr_ans = corr.piloteLePlusRapide(x, n)
         stu_ans = q.piloteLePlusRapide(x,n)
-        self.assertEqual(corr_ans, stu_ans,"The matrix x used was {} with the number of pilots = {}, the number of circuits = {} and n = {} .".format(x,nb_pilot,nb_circuit,n))
+        self.assertEqual(corr_ans, stu_ans,_("The matrix x used was {} with the number of pilots = {}, the number of circuits = {} and n = {} .").format(x,nb_pilot,nb_circuit,n))
         # test with all years
         stu_ans = q.piloteLePlusRapide(x,17)
         corr_ans = corr.piloteLePlusRapide(x, 17)
-        self.assertEqual(corr_ans, stu_ans,"The matrix x used was {} with the number of pilots = {}, the number of circuits = {} and n = 17 .".format(x,nb_pilot,nb_circuit))
+        self.assertEqual(corr_ans, stu_ans,_("The matrix x used was {} with the number of pilots = {}, the number of circuits = {} and n = 17 .").format(x,nb_pilot,nb_circuit))
         # test with current year
         stu_ans = q.piloteLePlusRapide(x,1)
         corr_ans = corr.piloteLePlusRapide(x, 1)
-        self.assertEqual(corr_ans, stu_ans,"The matrix x used was {} with the number of pilots = {}, the number of circuits = {} and n = 1 .".format(x,nb_pilot,nb_circuit))
+        self.assertEqual(corr_ans, stu_ans,_("The matrix x used was {} with the number of pilots = {}, the number of circuits = {} and n = 1 .").format(x,nb_pilot,nb_circuit))
         # test with only one circuit
         stu_ans = q.piloteLePlusRapide(x_single_circuit,n)
-        self.assertEqual(corr_ans_single_circuit, stu_ans,"The matrix x used was {} with the number of pilots = {}, the number of circuits = 1 and n = {} .".format(x_single_circuit,nb_pilot,n))
+        self.assertEqual(corr_ans_single_circuit, stu_ans,_("The matrix x used was {} with the number of pilots = {}, the number of circuits = 1 and n = {} .").format(x_single_circuit,nb_pilot,n))
 
 if __name__ == '__main__':
     unittest.main()

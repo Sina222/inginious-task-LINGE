@@ -11,6 +11,11 @@ context: |-
 
     Nous vous demandons d’implémenter une fonction ``estAntiMagique`` qui permet de vérifier si une matrice d’entiers est antimagique. Veillez à vérifier toutes les conditions précisées ci-dessus.
 
+    La matrice mat de dimension 3 et non antimagique ressemble à :
+
+    .. code-block:: python
+
+        mat = [[1, 6, 3, 3], [2, 1, 9, 4], [3, 2, 3, 5], [4, 2, 4, 5]]
 
 environment: default
 evaluate: best
