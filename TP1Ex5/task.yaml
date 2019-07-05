@@ -1,5 +1,5 @@
 accessible: true
-author:  Alexandre Fiset
+author: Alexandre Fiset
 context: |-
     Écrivez une méthode mirroir qui prend 5 lettres en entrée et renvoie en sortie une chaîne de caractères composée de ces 5 lettres dans l'ordre inverse.
 
@@ -14,24 +14,23 @@ context: |-
       .. code-block:: python
 
             ans = "edcba"
-
 environment: default
 evaluate: best
 groups: false
 input_random: '0'
 limits:
-    time: '30'
     memory: '100'
+    time: '30'
     output: '2'
-name: TP1  Exercice 5 - mirroir
+name: TP1  Exercice 5 - Mirroir
 network_grading: false
 problems:
     q1:
-        default: ''
-        type: code
-        language: python
-        header: Implementer la methode ``def mirroir(s)``
         name: Implémentation
+        header: Implementer la methode ``def mirroir(s)``
+        type: code
+        default: ''
+        language: python
 stored_submissions: 0
 submission_limit:
     amount: -1

@@ -1,5 +1,5 @@
 accessible: true
-author:  Alexandre Fiset
+author: Alexandre Fiset
 context: |-
     L’institut météo a enregistré la vitesse moyenne du vent et le niveau de précipitations au cours de la journée dans un tableau de nombres réels à deux dimensions, ``M``. Il s’agit donc d’une matrice 24 x 2. L’indice de ligne correspond à l’heure de la journée (de 0 à 23), la première colonne contient la vitesse du vent (en km/h) et la seconde colonne contient le niveau de précipitations (en cm de pluie par mètre carré et par heure) durant cette heure.
 
@@ -26,24 +26,23 @@ context: |-
             ans = [7, 89.25, 10.5]
 
     Pour arrondir des nombre flottant vous pouvez vous aider de ``round(f,n)`` où ``f`` est le nombre flotant à arrondir et ``n`` le nombre de décimales à garder.
-
 environment: default
 evaluate: best
 groups: false
 input_random: '0'
 limits:
-    time: '30'
     memory: '100'
+    time: '30'
     output: '2'
-name: TP6  Exercice 2 - station météo
+name: TP6  Exercice 2 - Examen September 2008
 network_grading: false
 problems:
     q1:
-        default: ''
-        type: code
-        language: python
-        header: Implementer la methode ``def tempete(M)``
         name: Implémentation
+        header: Implementer la methode ``def tempete(M)``
+        type: code
+        default: ''
+        language: python
 stored_submissions: 0
 submission_limit:
     amount: -1

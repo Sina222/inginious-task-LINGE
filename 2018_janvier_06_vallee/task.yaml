@@ -12,7 +12,7 @@ context: |-
     4, 2, 1, 2}`` et la représentation de cette liste dans le plan cartésien, les indices du tableau étant représentés sur
     l’axe X et les valeurs correspondantes (éléments de la liste) étant représentées sur l’axe Y (*Figure 1*).
 
-    .. image:: 2018_janvier_06_valee/figure1.png
+    .. image:: 2018_janvier_06_vallee/figure1.png
         :height: 350px
 
     **Définition d’une vallée :**
@@ -23,7 +23,7 @@ context: |-
     compris entre les indices :math:`i` et :math:`j` se trouvent toujours sur ou sous la droite reliant les deux points :math:`(i, tab[i])` et :math:`(j, tab[j])`. La taille d’une vallée est donnée par la valeur absolue de la différence entre les deux positions :math:`i` et :math:`j`. Afin
     d’illustrer cette définition, considérons la même liste d’entiers que ci-dessus, cette fois représenté en *Figure 2*.
 
-    .. image:: 2018_janvier_06_valee/figure2.png
+    .. image:: 2018_janvier_06_vallee/figure2.png
         :height: 350px
 
     La liste contient plusieurs vallées, dont certaines sont représentées sur la *Figure 2*. Par exemple, l’intervalle
@@ -49,14 +49,14 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
-    output: '2'
-    time: '30'
     memory: '100'
+    time: '30'
+    output: '2'
 name: 2018 Janvier Problème 6 - Plus grande vallée
 network_grading: false
 problems:
     q1:
-        default: ''
+        name: Maxima locaux
         header: |-
             Dans un premier temps, nous vous demandons donc d’implémenter une fonction ``maximaLocaux`` qui prend
             en argument une liste d’entiers et qui renvoie une liste d’entiers contenant les indices de tous les maxima
@@ -67,13 +67,11 @@ problems:
 
                 def maximaLocaux(tab)
         type: code
+        default: ''
         language: python
-        name: Maxima locaux
     q2:
         name: Vallée
         type: code
-        language: python
-        default: ''
         header: |-
             Pour cette question vous pouvez considérer que vous disposez d’une fonction ``valeurDroite`` (déjà écrite) qui prend en
             argument les coordonnées de deux points :math:`(x_A, y_A)` et :math:`(x_B, y_B)` ainsi qu’un nombre et qui renvoie la valeur (hauteur y) au point
@@ -102,9 +100,9 @@ problems:
             .. code-block:: python
 
                 def estVallee(tab, a, b)
-    q3:
-        type: code
         language: python
+        default: ''
+    q3:
         name: Plus grande vallée
         header: |-
             Enfin, nous vous demandons d’implémenter la fonction principale ``plusGrandeVallee`` prenant en argument une liste d’entiers ``tab`` et renvoyant une liste d’entiers contenant les indices de début et de fin de la **plus grande** vallée identifiée au sein de cette liste ``tab``. Pour le cas où il n'y a pas de vallée, la fonction ``plusGrandeVallee`` doit retourner la liste ``[0,0]``
@@ -115,7 +113,9 @@ problems:
             .. code-block:: python
 
                 def plusGrandeVallee(tab)
+        language: python
         default: ''
+        type: code
 stored_submissions: 0
 submission_limit:
     amount: -1

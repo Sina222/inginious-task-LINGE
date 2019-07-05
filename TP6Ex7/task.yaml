@@ -10,24 +10,24 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
+    memory: '100'
     time: '30'
     output: '2'
-    memory: '100'
-name: TP6EX7
+name: TP6 Exercice 7 - Examen Juin 2008
 network_grading: false
 problems:
     q1:
-        default: ''
         name: 'Ecrivez votre fonction PopulationIterative ici. La définition de la
             fonction doit être : def populationIterative(a, b)'
-        type: code
         header: ''
+        type: code
+        default: ''
         language: python
     q2:
-        header: ''
-        type: code
         name: 'Ecrivez votre fonction main  ici. La définition de la fonction doit
-            être : def main()'
+            être : def nombreAnnee()'
+        type: code
+        header: ''
         language: python
         default: ''
 stored_submissions: 0

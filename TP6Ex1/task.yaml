@@ -9,18 +9,18 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
-    output: '2'
     memory: '100'
     time: '30'
-name: TP6 Exercice 1 - Examen Septembre 2008 question 1
+    output: '2'
+name: TP6 Exercice 1 - Examen Septembre 2008
 network_grading: false
 problems:
     q1:
-        header: La fonction ``inverse(u)``
-        language: python
-        default: ''
-        type: code
         name: Implémentation
+        header: La fonction ``inverse(u)``
+        type: code
+        default: ''
+        language: python
 stored_submissions: 0
 submission_limit:
     amount: -1
