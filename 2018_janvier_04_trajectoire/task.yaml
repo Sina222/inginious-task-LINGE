@@ -23,6 +23,11 @@ context: |
     - Il n'y a aucun obstacle ni sur la ligne de départ (première colonne) ni à l'arrivée (dernière colonne), il n'y a par conséquent qu'un seul 1 dans la première colonne et celui-ci représente obligatoirement le point de départ, et réciproquement à l'arrivée.
 
     Un déplacement en ligne droite (horizontale ou verticale) d'une cellule équivaut à un déplacement de longueur 1. A partir de cette information, vous devez estimer la longueur d'un déplacement en diagonale à l'aide du théorème de Pythagore. Notez que votre fonction doit absolument tenir compte des déplacements diagonaux. **Faites attention de ne pas compabiliser les obstacles !**
+
+    Signature de la méthode :
+    ---------------------------------
+
+    ``def trajectoire(mat)``
 environment: default
 evaluate: best
 groups: false
