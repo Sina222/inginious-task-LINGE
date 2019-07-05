@@ -1,0 +1,29 @@
+accessible: true
+author: Bastien Nothomb
+context: Implémentez une méthode, ajoutPrenom, qui reçoit en entrée une liste composée
+    de prénoms classés dans l’ordre alphabétique, et d’un nouveau prénom. Ne rien
+    faire si le prénom s’y trouve déjà, sinon ajouter ce prénom dans la liste en respectant
+    l’ordre alphabétique. Affichez la liste pour terminer.
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: TP4 Exercice 7 supplémentaire - Ajout Prénom
+network_grading: false
+problems:
+    q1:
+        header: Implémentez la fonction ``ajoutPrenom(liste, prenom)`` en Python.
+        language: python
+        default: ''
+        type: code
+        name: Implémentation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

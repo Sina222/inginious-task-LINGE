@@ -8,17 +8,17 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
-    time: '30'
-    memory: '100'
     output: '2'
-name: 'TP4 Exercice 5 supplémentaire '
+    memory: '100'
+    time: '30'
+name: TP4 Exercice 5 supplémentaire - Somme
 network_grading: false
 problems:
     q1:
+        header: Fonction ``ligsomme(mat)``
+        language: python
         default: ''
         type: code
-        language: ''
-        header: Fonction ``ligsomme(mat)``
         name: Implémentation
 stored_submissions: 0
 submission_limit:

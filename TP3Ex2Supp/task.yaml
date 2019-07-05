@@ -12,25 +12,23 @@ context: |-
               * * * * *
             * * * * * * *
           * * * * * * * * *
-
 environment: default
 evaluate: best
 groups: false
 input_random: '0'
 limits:
-    time: '30'
     output: '2'
     memory: '100'
-name: 'TP3 Exercice 2 supplémentaire'
+    time: '30'
+name: TP3 Exercice 2 supplémentaire - Triangle
 network_grading: false
-order: 81
 problems:
     q1:
-        language: python
-        name: Implémentation
         header: Implémentez la fonction ``def triangle3(n)`` en Python.
+        language: python
         default: ''
         type: code
+        name: Implémentation
 stored_submissions: 0
 submission_limit:
     amount: -1
