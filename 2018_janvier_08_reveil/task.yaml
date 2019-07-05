@@ -1,0 +1,59 @@
+accessible: true
+author: Shafiei Sina
+context: |-
+    Dans cette question, nous allons vous demander de modéliser un **réveil digital** à l’aide d’un objet.
+    Pour cela, vous aller devoir créer une classe Reveil. Chaque instance de Reveil contient trois variables privées entières:
+    ``heure``, ``minute`` et ``seconde``.
+    **Attention à bien créer les méthodes**
+    ``getSeconde``, ``getMinute``, ``getHeure``
+    **pour pouvoir accéder aux variables privées.**
+
+    De plus, elle est également constituée des deux fonctions suivantes :
+
+    ----
+
+    .. code-block:: python
+
+        def __init__(self, heure, minute, seconde)
+
+    Cette fonction est le constructeur de la classe Reveil. Elle initialise le réveil à un certain nombre d’heures, de minutes et de secondes.  Nous supposons que les valeurs d’initialisation ne sont pas aberrantes.
+
+    ----
+
+    .. code-block:: python
+
+        def nouvelleHeure(nbseconde)
+
+    Cette fonction permet d’incrémenter d’un nombre de secondes, les valeurs stockées dans l’objet Reveil. Cette fonction ne doit rien afficher, elle doit uniquement modifier des valeurs de variables.
+
+    ----
+
+    *Exemple:*
+    Si le réveil affiche 8:20:55, si on lui rajoute 3723 secondes, il affichera 9:22:58.
+
+    **!!! Prenez en compte, qu’un réveil affiche les heures de 0 à 23 et les minutes, et secondes, de 0 à 59 !!!**
+
+    Nous vous demandons donc d'écrire la classe Reveil en fonction de ces instructions. N'oubliez pas d'indiquer clairement ``class Reveil:``, ainsi que tout ce qui se trouverait avant ou après la déclaration de la classe.
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    output: '2'
+    memory: '100'
+name: 2018 Janvier Problème 8 - Réveil
+network_grading: false
+problems:
+    studentcode:
+        language: python
+        name: Implémentation
+        header: Implémentez la classe ``Reveil`` en Python.
+        type: code
+        default: ''
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

@@ -9,7 +9,7 @@ context: |-
 
     Dans le cadre de cet exercice, nous vous demandons d’utiliser la méthode des trapèzes afin de calculer la valeur approximative de l’intégrale. Cette méthode est illustrée par la figure ci-dessous pour une approximation contenant trois sous-intervalles, chaque sous-intervalle [xi, xi+1] étant de longueur égale. Dans cet exemple, vous remarquez que l’aire sous la fonction est approximée dans chaque sous-intervalle délimité par [xi, xi+1] en effectuant une interpolation linéaire entre les deux valeurs correspondantes des ordonnées yi = f(xi) et yi+1 = f(xi+1) (ces deux valeurs sont reliées par un segment de droite).
 
-        .. figure:: 2019_Janvier_Probleme_10_integrale/trapeze.png
+        .. figure:: 2019_janvier_10_integrale/trapeze.png
                       :height: 200px
                       :align: right
 
@@ -21,10 +21,10 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
+    time: '30'
     output: '2'
     memory: '100'
-    time: '30'
-name: 2019 Janvier Problème 10 - integrale
+name: 2019 Janvier Problème 10 - Intégrale
 network_grading: false
 problems:
     thecode:
@@ -32,12 +32,12 @@ problems:
         default: |-
             def integrale(a,b,nbPoints):
                 return f(a)
-        language: python
         name: 'Intégration: méthode des trapèzes'
         header: |
             Nous vous demandons donc d’implémenter la méthode suivante :
             **integrale(a , b , nbPoints)**
             , qui intègre la fonction **f(x)** prenant en argument un nombre réel x et renvoie en sortie la valeur de la fonction f au point d’abscisse x.
+        language: python
 stored_submissions: 0
 submission_limit:
     amount: -1

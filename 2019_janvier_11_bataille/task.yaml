@@ -23,7 +23,6 @@ limits:
     memory: '100'
 name: 2019 Janvier Problème 11 - Bataille
 network_grading: false
-order: 0
 problems:
     q1:
         header: |-
