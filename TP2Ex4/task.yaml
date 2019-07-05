@@ -1,0 +1,39 @@
+accessible: true
+author: Alain Mbungu
+context: |-
+    Une autoroute à péage est divisée en sections. Chaque section est identifiée par un entier. La première section a le numéro *1*, la suivante le *2*, ... Les véhicules peuvent entrer et sortir en début et fin de section. Le prix à payer pour un véhicule dépend du nombre de sections parcourues. La première section coûte 1 euro et les suivantes coûtent 50 centimes.
+
+    Écrivez une methode ``prix`` qui reçoit la section d'entrée et la section de sortie d'une voiture en entrée et qui renvoie le montant du péage.
+
+    *Exemple* :
+
+    * Si la *sectionEntree* vaut 3 et la *sectionSortie* vaut 5, le prix est 1.5
+
+    * Si la sectionEntree vaut 3 et la sectionSortie vaut 3, le prix est 0.0
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    memory: '100'
+    time: '30'
+    output: '2'
+name: TP2 Exercice 4 - Autoroute à péage
+network_grading: false
+problems:
+    q1:
+        header: |4+
+
+        language: python
+        type: code
+        default: |-
+            def prix(sectionEntree, sectionSortie):
+                #à compléter
+                return ...
+        name: Implémentation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
