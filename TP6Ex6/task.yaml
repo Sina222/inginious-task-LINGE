@@ -1,0 +1,51 @@
+accessible: true
+author: ''
+context: |-
+    On vous demande d’écrire la fonction ``produitMatrice`` qui calcule le **produit matriciel ordinaire** de deux matrices :math:`A` et :math:`B`. Le produit de deux matrices ne peut se définir que si le nombre de colonnes de la première matrice est le même que le nombre de lignes de la deuxième matrice.
+    Si :math:`A = (aij)` (:math:`aij` sont les éléments de la matrice) est une matrice de taille :math:`(m, n)` et :math:`B = (bij)` est une matrice de taille :math:`(n, p)`, alors leur produit, noté :math:`AB = (cij)` est une matrice de taille :math:`(m, p)` donnée par :
+
+    .. math::
+
+        \forall i,j : c_{ij} = \sum_{k=1}^n a_{ik} b_{kj} = a_{i1} b_{1j} + a_{i2} b_{2j} + \cdots + a_{in} b_{nj}
+
+    Pour simplifier le problème, nous allons supposer que les matrices :math:`A` et :math:`B` sont de types compatibles et non vides.
+
+    **Exemple :**
+
+    .. math::
+
+        A = \begin{pmatrix} 1&0\\ -1&3\\ \end{pmatrix}\quad
+        B = \begin{pmatrix} 3&1\\ 2&1\\ \end{pmatrix}
+
+        AB = \begin{pmatrix} 3&1\\ 3&2\\ \end{pmatrix}
+
+
+
+    Signature de la fonction :
+
+    .. code:: python
+
+        def produitMatrice(A, B)
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    time: '30'
+    memory: '100'
+name: TP6 exercice 6
+network_grading: false
+problems:
+    q1:
+        default: ''
+        header: ''
+        type: code
+        language: python
+        name: 'Implémentation :'
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

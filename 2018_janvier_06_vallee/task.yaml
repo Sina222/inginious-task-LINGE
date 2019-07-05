@@ -43,20 +43,20 @@ context: |-
     voisins (de gauche et de droite). Notons que nous considérons que les extrémités du tableau (premier et dernier
     indice) ne peuvent pas être un maximum local.
 
-    A partir de ces informations, vous allez devoir écrire *trois fonctions*, au cours des quatre étapes suivantes.
+    A partir de ces informations, vous allez devoir écrire *trois méthodes*, au cours des quatre étapes suivantes.
 environment: default
 evaluate: best
 groups: false
 input_random: '0'
 limits:
-    time: '30'
     output: '2'
+    time: '30'
     memory: '100'
 name: 2018 Janvier Problème 6 - Plus grande vallée
 network_grading: false
 problems:
     q1:
-        language: python
+        default: ''
         header: |-
             Dans un premier temps, nous vous demandons donc d’implémenter une fonction ``maximaLocaux`` qui prend
             en argument une liste d’entiers et qui renvoie une liste d’entiers contenant les indices de tous les maxima
@@ -66,9 +66,9 @@ problems:
             .. code-block:: python
 
                 def maximaLocaux(tab)
-        default: ''
-        name: Maxima locaux
         type: code
+        language: python
+        name: Maxima locaux
     q2:
         name: Vallée
         type: code
@@ -95,7 +95,7 @@ problems:
 
             Ici, nous vous demandons d’écrire une fonction ``estVallee`` prenant en argument une liste d’entiers ``tab`` ainsi que deux nombres entiers ``a`` et ``b`` et renvoyant un booléen indiquant si l’intervalle d’indices ``[a,b]`` dans la liste ``tab`` est une vallée (**true**) ou non (**false**).
 
-            La méthode ``estVallee`` doit utiliser la fonction ``valeurDroite``, et n’oubliez pas de vous référer à la définition de vallée donnée précédemment.
+            La fonction ``estVallee`` doit utiliser la fonction ``valeurDroite``, et n’oubliez pas de vous référer à la définition de vallée donnée précédemment.
 
             Signature de la fonction (n'oubliez pas de la réécrire) :
 
@@ -105,6 +105,7 @@ problems:
     q3:
         type: code
         language: python
+        name: Plus grande vallée
         header: |-
             Enfin, nous vous demandons d’implémenter la fonction principale ``plusGrandeVallee`` prenant en argument une liste d’entiers ``tab`` et renvoyant une liste d’entiers contenant les indices de début et de fin de la **plus grande** vallée identifiée au sein de cette liste ``tab``. Pour le cas où il n'y a pas de vallée, la fonction ``plusGrandeVallee`` doit retourner la liste ``[0,0]``
             La fonction ``plusGrandeVallee`` doit utiliser les fonctions ``maximaLocaux`` et ``estVallee`` décrites ci-dessus. Les sous-questions étant indépendantes, vous pouvez utiliser les fonctions ``maximaLocaux`` et ``estVallee`` grâce à leurs signatures données ci-dessus, même si vous n’avez pas réussi à répondre à ces sous-questions.
@@ -114,7 +115,6 @@ problems:
             .. code-block:: python
 
                 def plusGrandeVallee(tab)
-        name: Plus grande vallée
         default: ''
 stored_submissions: 0
 submission_limit:
