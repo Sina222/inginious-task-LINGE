@@ -1,0 +1,49 @@
+accessible: true
+author:  Alexandre Fiset
+context: |-
+    Ecrire une méthode test qui demande à l’utilisateur d’entrer au clavier successivement 3 valeurs entières, et affiche en sortie la valeur la plus élevée qui a été introduite. Au cas où au moins 2 des entiers sont égaux, afficher une petite phrase pour informer l’utilisateur.
+
+    Exemple du comportement de votre code :
+
+      .. code-block:: python
+
+          Entrez le numero 1 :-100
+          Entrez le numero 2 :6
+          Entrez le numero 3 :-50
+          Le nombre le plus grand est 6
+
+
+    Exemple du comportement de votre code si il y a deux nombre égaux :
+
+      .. code-block:: python
+
+          Entrez le numero 1 :4
+          Entrez le numero 2 :-7
+          Entrez le numero 3 :4
+          Le nombre le plus grand est 4
+          Mais vous avez introduit des valeurs identiques !
+
+
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    memory: '100'
+    output: '2'
+name: TP2  Exercice 1 - maximum
+network_grading: false
+problems:
+    q1:
+        default: ''
+        type: code
+        language: python
+        header: Implementer la methode ``def main()``
+        name: Implémentation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
