@@ -9,18 +9,18 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
-    time: '30'
     output: '2'
     memory: '100'
-name: TP4EX4SUPP
+    time: '30'
+name: TP4 Exercice 4 supplémentaire - MaxMatrice
 network_grading: false
 problems:
     q1:
+        header: ''
+        language: python
+        default: ''
         type: code
         name: Put your function here
-        header: ''
-        default: ''
-        language: ''
 stored_submissions: 0
 submission_limit:
     amount: -1

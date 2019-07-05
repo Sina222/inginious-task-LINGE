@@ -4,23 +4,23 @@
 
 import unittest
 import q
-import Ex5Supp
+import CorrQ
 import random as rd 
 rd.seed(2019)
 
 #Correct solution
 A=[[rd.randint(1,10) for i in range(10)] for i in range(10)]
-ans=Ex5Supp.ligsomme(A) 
+ans=CorrQ.ligsomme(A) 
 student=q.ligsomme(A) 
 
-class TestPageRank(unittest.TestCase):
+class TestLigSomme(unittest.TestCase):
 
 	def test_exist_ligsomme(self):
-		self.assertTrue(hasattr(q, 'ligsomme'), "@1@: " + _("You did not name the method as expected."))
+		self.assertTrue(hasattr(q, 'ligsomme'), _("You did not name the method as expected."))
 
 	def test_ligsomme(self):
 		for i in range(len(ans)):
-			self.assertEqual(ans[i],student[i],"@1@: Il y a un problème dans la fonction ligsomme()")
+			self.assertEqual(ans[i],student[i]," Il y a un problème dans la fonction ligsomme()")
 
 if __name__ == '__main__':
 	unittest.main()

@@ -4,7 +4,7 @@
 
 import unittest
 import q 
-import Examen
+import CorrQ
 import random as rd 
 import sys
 import filecmp
@@ -20,7 +20,7 @@ class TestExamen(unittest.TestCase):
 		original = sys.stdout
 		with open('redirect_corr.txt', 'w') as f:
 			sys.stdout = f
-			Examen.launch(L) 
+			CorrQ.launch(L) 
 		with open('redirect_student.txt', 'w') as f:
 			sys.stdout = f
 			q.launch(L)
