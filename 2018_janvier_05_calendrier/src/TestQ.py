@@ -22,17 +22,17 @@ DATES_INPUT = [
 class TestDate(unittest.TestCase):
     def test_specs(self):
         self.assertTrue(hasattr(q, 'Date') and hasattr(q.Date, 'hier') and callable(
-            q.Date.hier), _("Vous n'avez pas bien spécifié vos fonctions / votre classe."))
+            q.Date.hier), _("Vous n'avez pas bien spécifié vos méthodes / votre classe."))
 
         self.assertTrue(hasattr(q.Date, 'getJour') and callable(q.Date.getJour) and hasattr(
             q.Date, 'getMois') and callable(q.Date.getMois) and hasattr(q.Date, 'getAnnee') and callable(q.Date.getAnnee),
-            _("Vous n'avez pas bien spécifié vos fonctions / votre classe."))
+            _("Vous n'avez pas bien spécifié vos méthodes / votre classe."))
 
         try:
             date = q.Date(24, 12, 2042)
         except TypeError:
             self.fail(
-                _("Vous n'avez pas bien spécifié vos fonctions / votre classe."))
+                _("Vous n'avez pas bien spécifié vos méthodes / votre classe."))
 
         self.assertTrue(hasattr(date, '_Date__jour') and hasattr(date, '_Date__mois') and hasattr(date, '_Date__annee'), _(
             "Vous n'avez pas bien nommé vos variables d'instance (attention à la convention des variables privées en python)."))
