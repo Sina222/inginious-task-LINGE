@@ -1,0 +1,40 @@
+accessible: true
+author:  Alexandre Fiset
+context: |-
+    Écrivez une méthode mirroir qui prend 5 lettres en entrée et renvoie en sortie une chaîne de caractères composée de ces 5 lettres dans l'ordre inverse.
+
+    Par exemple pour le string :
+
+      .. code-block:: python
+
+          s = "abcde"
+
+    Votre code doit retourner :
+
+      .. code-block:: python
+
+            ans = "edcba"
+
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    memory: '100'
+    output: '2'
+name: TP1  Exercice 5 - mirroir
+network_grading: false
+problems:
+    q1:
+        default: ''
+        type: code
+        language: python
+        header: Implementer la methode ``def mirroir(s)``
+        name: Implémentation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
