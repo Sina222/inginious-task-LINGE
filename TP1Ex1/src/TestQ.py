@@ -10,7 +10,7 @@ import q
 
 class TestController(unittest.TestCase):
 
-    """Test case pour tester la methode inverse()."""
+    """Test case pour tester la methode heure()."""
 
     def test_exist(self):
         if not hasattr(q, 'heure'):
