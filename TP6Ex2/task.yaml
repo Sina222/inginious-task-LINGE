@@ -1,0 +1,52 @@
+accessible: true
+author:  Alexandre Fiset
+context: |-
+    L’institut météo a enregistré la vitesse moyenne du vent et le niveau de précipitations au cours de la journée dans un tableau de nombres réels à deux dimensions, ``M``. Il s’agit donc d’une matrice 24 x 2. L’indice de ligne correspond à l’heure de la journée (de 0 à 23), la première colonne contient la vitesse du vent (en km/h) et la seconde colonne contient le niveau de précipitations (en cm de pluie par mètre carré et par heure) durant cette heure.
+
+    L’institut considère qu’il y a tempête lorsque, à la fois, la vitesse du vent excède 90 km/h et que le niveau de précipitations excède 10 cm. A partir de ces données, nous vous demandons d’écrire une méthode qui, à partir du tableau M, calcule:
+
+      1. Le nombre d’heures de tempête durant la journée de 24 heures.
+
+      2. La vitesse moyenne du vent durant ces heures de tempête ( arrondi à deux décimales ).
+
+      3. Le niveau moyen de précipitations durant ces heures de tempête (arrondi à deux décimales ).
+
+    Ces trois informations seront mémorisées dans un tableau de nombres réels de longueur 3 qui sera renvoyé par la méthode
+
+    Par exemple pour la matrice :
+
+      .. code-block:: python
+
+            M = [[91, 5], [94, 1], [100, 14], [92, 1], [86, 20], [86, 9], [94, 16], [85, 16], [80, 6], [92, 14], [93, 18], [99, 5], [82, 17], [83, 3], [101, 12], [96, 14], [80, 4], [90, 3], [80, 6], [81, 12], [94, 21], [84, 19], [99, 0], [80, 16]]
+
+    Votre code doit retourner :
+
+      .. code-block:: python
+
+            ans = [7, 89.25, 10.5]
+
+    Pour arrondir des nombre flottant vous pouvez vous aider de ``round(f,n)`` où ``f`` est le nombre flotant à arrondir et ``n`` le nombre de décimales à garder.
+
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    memory: '100'
+    output: '2'
+name: TP6  Exercice 2 - station météo
+network_grading: false
+problems:
+    q1:
+        default: ''
+        type: code
+        language: python
+        header: Implementer la methode ``def tempete(M)``
+        name: Implémentation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
