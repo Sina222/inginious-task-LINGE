@@ -2,11 +2,14 @@ accessible: true
 author: ''
 context: |
     Ecrire une méthode Python, appelée premier, qui reçoit en entrée un entier positif n et renvoie true en sortie si cette valeur est un nombre premier (false sinon). Par contre, si le nombre n fourni en paramètre est nul ou négatif, il faut afficher un message d’erreur et renvoyer false.  Rappelons qu’un nombre premier est un chiffre positif qui n’est divisible que par lui-même et par 1. Un nombre x est divisible par un nombre y si et seulement si le reste de la division de x par y est nul.
+
+    La signature de votre fonction doit être ``def premier(n)``
 environment: default
 evaluate: best
 groups: false
 input_random: '0'
 limits:
+    time: '30'
     output: '2'
     memory: '100'
     time: '30'

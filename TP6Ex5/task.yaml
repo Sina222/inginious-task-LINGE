@@ -1,11 +1,11 @@
 accessible: true
-author:  Alain Mbungu
+author: Alain Mbungu
 context: |-
-    Ecrivez une méthode Java, **arrToMat**, qui reçoit comme argument d’entrée un tableau à une dimension d’entiers nommée **v** 
-    
+    Ecrivez une méthode Java, **arrToMat**, qui reçoit comme argument d’entrée un tableau à une dimension d’entiers nommée **v**
+
     .. math::
         v = {l_1, l_2, l_3, l_4,…, l_{n–1}, l_n}
-    
+
     et qui renvoie en sortie une matrice carrée **mat** de nombre de lignes et de colonnes égal à la taille du tableau **v** et contenant les éléments de v répartis de la manière suivante
 
     .. image:: TP6Ex5/TP6Ex5.png
@@ -18,18 +18,18 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
-    time: '30'
     memory: '100'
+    time: '30'
     output: '2'
-name: TP6Ex5 Examen Janvier 2006
+name: TP6  Exercice 5 - Examen Janvier 2006
 network_grading: false
 problems:
     q1:
-        default: ''
-        type: code
-        language: ''
-        header: La fonction ``arrToMat(v)``
         name: Implémentation
+        header: La fonction ``arrToMat(v)``
+        type: code
+        default: ''
+        language: python
 stored_submissions: 0
 submission_limit:
     amount: -1
