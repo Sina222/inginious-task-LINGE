@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+@@q1@@
+
+def launch(notes):
+    tab = examen(notes)
+    for i in range(len(tab)):
+        print("il y a " + str(tab[i]) + " notes entre " + str(i*10) + " et " + str(i*10+9))

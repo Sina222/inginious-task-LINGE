@@ -1,0 +1,29 @@
+accessible: 2018-11-02 12:00:00/
+author: Bastien Nothomb
+context: |-
+    Implémentez la méthode sumArray, qui prend un tableau d’entiers en entrée et renvoie en sortie la somme de tous les éléments du tableau.
+    En même temps, la méthode devra également afficher le contenu du tableau à l’écran.
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    time: '30'
+    memory: '100'
+name: TP4 exercice 1 supplémentaire - SumArray
+network_grading: false
+order: 0
+problems:
+    q1:
+        type: code
+        language: python
+        header: Implémentez la fonction ``sumArray(array)`` en Python.
+        default: ''
+        name: Implémentation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

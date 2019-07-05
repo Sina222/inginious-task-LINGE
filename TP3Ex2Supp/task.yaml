@@ -1,0 +1,39 @@
+accessible: 2018-11-02 12:00:00/
+author: Alexandre Fiset
+context: |-
+    Ecrivez une méthode ``triangle3`` et qui prend en parametre la hauteur du triangle d’étoiles qu'il faut imprimer en utilisant des boucles for imbriquées.
+
+    Par exemple, pour ``n = 5`` la fonction doit retouner:
+
+      .. code-block:: python
+
+                  *
+                * * *
+              * * * * *
+            * * * * * * *
+          * * * * * * * * *
+
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    output: '2'
+    memory: '100'
+name: 'TP3 Exercice 2 supplémentaire'
+network_grading: false
+order: 81
+problems:
+    q1:
+        language: python
+        name: Implémentation
+        header: Implémentez la fonction ``def triangle3(n)`` en Python.
+        default: ''
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
