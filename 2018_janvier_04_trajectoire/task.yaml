@@ -9,7 +9,7 @@ context: |
     Par exemple, soit la matrice de taille quelconque suivante, représentat un parcours(trajectoire) :
 
 
-    .. image:: 2018_janvier_4_Trajectoire/Trajectoire.png
+    .. image:: 2018_janvier_04_trajectoire/Trajectoire.png
        :width: 600
 
     Voitre fonction devra retourner la longueur totale du parcours dans le tableau (indiqué en gris foncé dans l'exemple) tout en évitant de prendre en compte les obstacles (aussi représenté en gris foncé). Pour ce faire, considérez les hypotheses simplificatrices suivantes :
@@ -23,28 +23,23 @@ context: |
     - Il n'y a aucun obstacle ni sur la ligne de départ (première colonne) ni à l'arrivée (dernière colonne), il n'y a par conséquent qu'un seul 1 dans la première colonne et celui-ci représente obligatoirement le point de départ, et réciproquement à l'arrivée.
 
     Un déplacement en ligne droite (horizontale ou verticale) d'une cellule équivaut à un déplacement de longueur 1. A partir de cette information, vous devez estimer la longueur d'un déplacement en diagonale à l'aide du théorème de Pythagore. Notez que votre fonction doit absolument tenir compte des déplacements diagonaux. **Faites attention de ne pas compabiliser les obstacles !**
-
-    Signature de la méthode :
-    ---------------------------------
-
-    *def trajectoire(mat) :*
 environment: default
 evaluate: best
 groups: false
 input_random: '0'
 limits:
-    time: '30'
     output: '2'
     memory: '100'
-name: 2018 Janvier Probleme 4 - Trajectoire
+    time: '30'
+name: 2018 Janvier Problème 4 - Trajectoire
 network_grading: false
 problems:
     q1:
-        type: code
-        header: ''
-        language: ''
+        header: Implémentez la fonction ``trajectoire(mat)`` en Python.
+        language: python
         default: ''
-        name: ''
+        type: code
+        name: 'Implémentation '
 stored_submissions: 0
 submission_limit:
     amount: -1

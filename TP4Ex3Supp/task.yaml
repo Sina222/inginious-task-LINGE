@@ -18,21 +18,20 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
-    memory: '100'
     output: '2'
+    memory: '100'
     time: '30'
-name: TP4 exercice 3 supplémentaire - Comptage
+name: TP4 Exercice 3 supplémentaire - Comptage
 network_grading: false
-order: 73
 problems:
     q1:
-        name: Implémentation
+        header: Créez la fonction ``compte()`` en Python.
         language: python
         default: |-
             def compte():
                 #TODO
-        header: Créez la fonction ``compte()`` en Python.
         type: code
+        name: Implémentation
 stored_submissions: 0
 submission_limit:
     amount: -1
