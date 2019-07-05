@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 def sousChaine(x, y):
     sizeX = len(x)
     sizeY = len(y)
