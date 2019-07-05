@@ -1,0 +1,54 @@
+accessible: true
+author: Shafiei Sina
+context: |-
+    Écrivez une méthode ``changer()`` qui reçoit une chaîne de caractère en entrée, et renvoie en sortie cette chaîne où toutes les lettres 'r' seront remplacées par 'l'.
+
+    **Exemple:**
+
+    La chaine de caractère suivant:
+
+    .. code-block:: python
+
+        "Et ce grand dragon, cet ancien serpent"
+
+    Donnera:
+
+    .. code-block:: python
+
+        "Et ce gland dlagon, cet ancien selpent"
+
+    ----
+
+    **Optionnel:**
+
+    Pour aller plus loin, vous pouvez également permettre à l’utilisateur de rentrer la lettre à remplacer ainsi que la lettre qui la remplacera.
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    memory: '100'
+    output: '2'
+    time: '30'
+name: TP1 exercice 4
+network_grading: false
+problems:
+    q1:
+        language: python
+        name: Implémentation
+        header: Implémentez la méthode ``change(string)``
+        default: ''
+        type: code
+    q2:
+        optional: 'on'
+        name: Optionnel
+        default: ''
+        language: python
+        type: code
+        header: Implémentez la méthode ``changeSupp(string, x, y)``
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
