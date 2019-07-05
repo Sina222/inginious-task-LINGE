@@ -30,22 +30,22 @@ limits:
     memory: '100'
     output: '2'
     time: '30'
-name: TP1 exercice 4
+name: TP1 Exercice 4 - Chaîne de caractère
 network_grading: false
 problems:
     q1:
-        language: python
         name: Implémentation
-        header: Implémentez la méthode ``change(string)``
-        default: ''
         type: code
+        default: ''
+        header: Implémentez la méthode ``change(string)``
+        language: python
     q2:
-        optional: 'on'
         name: Optionnel
         default: ''
         language: python
-        type: code
         header: Implémentez la méthode ``changeSupp(string, x, y)``
+        optional: 'on'
+        type: code
 stored_submissions: 0
 submission_limit:
     amount: -1

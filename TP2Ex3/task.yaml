@@ -20,15 +20,15 @@ limits:
     memory: '100'
     output: '2'
     time: '30'
-name: TP2 exercice 3
+name: TP2 Exercice 3 - Police
 network_grading: false
 problems:
     q1:
-        header: ''
-        type: code
-        language: python
-        default: ''
         name: 'Implémentation :'
+        type: code
+        default: ''
+        header: ''
+        language: python
 stored_submissions: 0
 submission_limit:
     amount: -1
