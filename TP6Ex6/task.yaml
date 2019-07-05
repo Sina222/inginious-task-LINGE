@@ -1,5 +1,5 @@
 accessible: true
-author: ''
+author: Maxime Postaire
 context: |-
     On vous demande d’écrire la fonction ``produitMatrice`` qui calcule le **produit matriciel ordinaire** de deux matrices :math:`A` et :math:`B`. Le produit de deux matrices ne peut se définir que si le nombre de colonnes de la première matrice est le même que le nombre de lignes de la deuxième matrice.
     Si :math:`A = (aij)` (:math:`aij` sont les éléments de la matrice) est une matrice de taille :math:`(m, n)` et :math:`B = (bij)` est une matrice de taille :math:`(n, p)`, alors leur produit, noté :math:`AB = (cij)` est une matrice de taille :math:`(m, p)` donnée par :
@@ -38,11 +38,11 @@ name: TP6 exercice 6
 network_grading: false
 problems:
     q1:
-        default: ''
-        header: ''
         type: code
-        language: python
         name: 'Implémentation :'
+        default: ''
+        language: python
+        header: ''
 stored_submissions: 0
 submission_limit:
     amount: -1

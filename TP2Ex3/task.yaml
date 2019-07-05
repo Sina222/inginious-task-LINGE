@@ -1,0 +1,37 @@
+accessible: true
+author: Maxime Postaire
+context: |-
+    La police vous engage pour développer un programme permettant de calculer l'amende qu'un conducteur de voiture devra payer en cas d'infraction. La loi stipule que le conducteur devra payer 5 euros par km/h au-dessus de la vitesse maximale autorisée, avec un minimum de 12.5 euros. Pour tout dépassement de plus de 10 km/h, l'amende est doublée !
+
+    Ecrivez une fonction ``amende`` qui reçoit la vitesse maximale autorisée ``vmax`` et la vitesse réelle ``v`` de la voiture et qui renvoie l’éventuelle amende (on considère que les valeurs d'entrée sont toujours correctes : pas de vitese négative, ...).
+
+    **Exemple :** Si la vitesse maximum est de 50km/h et que le véhicule roule à 62km/h, l''amende sera de 12*5*2=120€.
+
+    La signature de cette fonction est :
+
+    .. code:: python
+
+        def amende(vmax, v)
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    memory: '100'
+    output: '2'
+    time: '30'
+name: TP2 exercice 3
+network_grading: false
+problems:
+    q1:
+        header: ''
+        type: code
+        language: python
+        default: ''
+        name: 'Implémentation :'
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
