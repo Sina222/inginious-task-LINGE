@@ -35,7 +35,7 @@ limits:
     time: '30'
     memory: '100'
     output: '2'
-name: TP6  Exercice 2
+name: TP6  Exercice 2 - station météo
 network_grading: false
 problems:
     q1:
