@@ -109,26 +109,23 @@ context: |-
                   0 : Karadoc de Vannes
                   Enter the id of the name to remove :-1
                   Goodbye !
-
-
 environment: default
 evaluate: best
 groups: false
 input_random: '0'
 limits:
-    time: '30'
     output: '2'
     memory: '100'
-name: 'TP4 Exercice 8 supplémentaire'
+    time: '30'
+name: TP4 Exercice 8 supplémentaire - Prénom
 network_grading: false
-order: 81
 problems:
     q1:
-        language: python
-        name: Implémentation
         header: Implémentez la methode ``def main()`` en Python.
+        language: python
         default: ''
         type: code
+        name: Implémentation
 stored_submissions: 0
 submission_limit:
     amount: -1
