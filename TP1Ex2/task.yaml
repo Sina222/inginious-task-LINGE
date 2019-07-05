@@ -1,0 +1,37 @@
+accessible: true
+author: Alexandre Fiset
+context: |-
+    Écrivez une méthode moyenne qui prend deux entiers en entrée, et renvoie leur moyenne (float) en sortie.
+
+    Ensuite, écrivez dans le main un programme qui demande à l’utilisateur d’entrer les deux nombres, avant d'appeler la méthode et d’afficher le résultat.
+
+    Exemple du comportement de votre code :
+
+      .. code-block:: python
+
+          Entrez le premier nombre :4
+          Entrez le deuxième nombre :-7
+          La moyenne est :-1.5
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    memory: '100'
+    time: '30'
+    output: '2'
+name: TP1  Exercice 2 - Moyenne
+network_grading: false
+problems:
+    q1:
+        name: Implémentation
+        header: Implementer la methode ``def moyenne(a,b)`` et ``def main()``
+        type: code
+        default: ''
+        language: python
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

@@ -1,0 +1,29 @@
+accessible: true
+author: J-F Sambon
+context: |-
+    Implémentez une méthode, maxmatrice, qui reçoit un tableau d’entiers à deux dimensions en entrée représentant une matrice, et qui renvoie en sortie un entier qui est la valeur du plus grand élément de la matrice. La signature de cette fonction doit être : ``def maxmatrice(mat)``
+
+    Exemple : pour la ``matrice = [[0 10 1] [1 4 7]]`` votre fonction doit retourner 10.
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: TP4 Exercice 4 supplémentaire - MaxMatrice
+network_grading: false
+problems:
+    q1:
+        header: ''
+        language: python
+        default: ''
+        type: code
+        name: Put your function here
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
