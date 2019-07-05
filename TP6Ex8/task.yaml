@@ -1,0 +1,33 @@
+accessible: true
+author: Alain Mbungu
+context: |
+    Écrire une méthode **merge** qui prend en paramètre deux tableaux d'entiers à une dimension (vecteurs *tab1* et *tab2*) de longueurs quelconques. La méthode doit renvoyer un nouveau tableau d'entiers qui contient les éléments des deux tableaux reçus en paramètre entrelacés. Plus précisément, soient ``s1, s2, s3, ..., sm`` les éléments du premier tableau (*tab1*) et ``t1, t2, t3, ..., tn`` les éléments du second tableau (*tab2*). Les éléments du tableau renvoyé sont ``s1, t1, s2, t2, s3, t3,....`` Faites bien attention au fait que les deux tableaux n'ont pas forcément la même longueur et qu’ils peuvent même être vides. Notez aussi que les tableaux passés en paramètre *tab1* et *tab2* ne doivent pas être modifiés !
+
+    *Exemple:* **tab1=[1,2,3,4]** et **tab2=[5,6]** donnent
+
+    .. code-block:: python
+
+        [1,5,2,6,3,4]
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    memory: '100'
+    time: '30'
+    output: '2'
+name: TP6  Exercice 8 - Examen Janvier 2009
+network_grading: false
+problems:
+    q1:
+        name: Implémentation
+        header: La fonction ``merge(tab1,tab2)``
+        type: code
+        default: ''
+        language: python
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

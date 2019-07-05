@@ -1,0 +1,46 @@
+accessible: true
+author: Shafiei Sina
+context: |
+    Ecrivez une méthode ``sousChaine()`` qui détecte si une chaîne de caractères ``y`` est comprise dans une autre chaîne de caractères ``x`` (càd qu’il faut vérifier si on retrouve tous les caractères de la chaîne ``y`` séquentiellement dans le même ordre dans ``x``). On peut déjà en déduire que ``x`` doit être au moins de la même longueur que ``y``. Notez qu'une manière de faire serai de parcourir la chaîne ``x`` et comparer les caractères des chaines ``x`` et ``y``.
+    Cette méthode renverra true si ``y`` est une sous-chaîne de ``x`` et false sinon.
+
+    *Exemple*
+
+    .. code-block:: python
+
+        x="dcUjnfakCvfLcgah" et y="UCL" donnera True en sortie
+
+    Par contre
+
+    .. code-block:: python
+
+        x="dcLjnfUakCvfcgah" et y ="UCL" donnera False en sortie
+
+    Signature de la méthode :
+
+    .. code-block:: python
+
+        def sousChaine(x, y)
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    time: '30'
+    memory: '100'
+name: TP6 exercice 4
+network_grading: false
+problems:
+    studentcode:
+        type: code
+        name: Implémentation
+        default: ''
+        language: python
+        header: ''
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

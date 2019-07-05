@@ -4,7 +4,7 @@
 
 import unittest
 import q
-from inverse import *
+from CorrQ import *
 import random as rd 
 rd.seed(2019)
 
@@ -13,7 +13,7 @@ L=[rd.randint(1,100) for i in range(20)]
 ans=inverse(L) 
 student=q.inverse(L) 
 
-class TestPageRank(unittest.TestCase):
+class TestInverse(unittest.TestCase):
 
 	def test_exist_inverse(self):
 		self.assertTrue(hasattr(q, 'inverse'), "@1@: " + _("You did not name the method as expected."))

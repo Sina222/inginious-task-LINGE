@@ -9,17 +9,16 @@ groups: false
 input_random: '0'
 limits:
     output: '2'
-    time: '30'
     memory: '100'
-name: TP4 exercice 1 supplémentaire - SumArray
+    time: '30'
+name: TP4 Exercice 1 supplémentaire - SumArray
 network_grading: false
-order: 0
 problems:
     q1:
-        type: code
-        language: python
         header: Implémentez la fonction ``sumArray(array)`` en Python.
+        language: python
         default: ''
+        type: code
         name: Implémentation
 stored_submissions: 0
 submission_limit:

@@ -1,0 +1,40 @@
+accessible: true
+author: Shafiei Sina
+context: |
+    Écrivez une méthode ``heure()`` qui affiche un certain nombre de secondes sous la forme
+    heures, minutes et secondes
+
+    *Par exemple:*
+
+    .. code-block:: python
+
+        heure(9999)
+
+    donnera
+
+    .. code-block:: python
+
+        2 heures, 46 minutes et 39 secondes
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    time: '30'
+    memory: '100'
+name: TP1 exercice 1
+network_grading: false
+problems:
+    studentcode:
+        header: ''
+        language: python
+        type: code
+        default: ''
+        name: Implémentation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

@@ -1,0 +1,38 @@
+accessible: true
+author: J-F Sambon
+context: |
+    Un jardinier plante un nombre a de nénuphars dans son étang. Chaque nénuphar est capable d'engendrer un autre nénuphar chaque année, la population de nénuphars double donc chaque année :
+
+    - Programmez une version itérative du calcul de la population sous la forme d'une méthode PopulationIterative prenant en arguments la population initiale a et le nombre d'années écoulées n. Si n < 0 la fonction renvoie 0 sinon elle renvoie la population de l'année n.Signature de la méthode: **def populationIterative(a,n)**
+    - L'étang a une superficie de 60 m2 et un nénuphar fait 20 cm2. Ecrivez une méthode main(...) qui utilise la méthode précédente (PopulationIterative) et une boucle while pour trouver combien d'années il faudra en partant de 3 nénuphars pour couvrir tout l'étang, et afficher le résultat. (NB: 1 m2 = 10 000 cm2)Signature de la méthode: **def nombreAnnee()**
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    memory: '100'
+    time: '30'
+    output: '2'
+name: TP6 Exercice 7 - Examen Juin 2008
+network_grading: false
+problems:
+    q1:
+        name: 'Ecrivez votre fonction PopulationIterative ici. La définition de la
+            fonction doit être : def populationIterative(a, b)'
+        header: ''
+        type: code
+        default: ''
+        language: python
+    q2:
+        name: 'Ecrivez votre fonction main  ici. La définition de la fonction doit
+            être : def nombreAnnee()'
+        type: code
+        header: ''
+        language: python
+        default: ''
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

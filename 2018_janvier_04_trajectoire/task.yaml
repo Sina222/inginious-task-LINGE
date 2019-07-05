@@ -1,0 +1,53 @@
+accessible: true
+author: J-F Sambon
+context: |
+    Vous devez écrire une fonction *trajectoire* permettant de calculer la longueur du parcours d'un individu. Ce parcours est décrit via une matrice de nombre entiers, représentant une rectangle de terrain. Elle n'est composé que de 0 et de 1, les 1 pouvant représenter deux choses :
+
+    - La trajectoire d'un individu
+    - Des obstacles sur le parcours
+
+    Par exemple, soit la matrice de taille quelconque suivante, représentat un parcours(trajectoire) :
+
+
+    .. image:: 2018_janvier_04_trajectoire/Trajectoire.png
+       :width: 600
+
+    Voitre fonction devra retourner la longueur totale du parcours dans le tableau (indiqué en gris foncé dans l'exemple) tout en évitant de prendre en compte les obstacles (aussi représenté en gris foncé). Pour ce faire, considérez les hypotheses simplificatrices suivantes :
+
+    - A tout moment, l'individu ne peut qu'avancer(Y strictement croissant), soit en ligne droite (déplacement horizontal), soit en diagonale (déplacement diagonal). Voir figure 1.
+
+    - L'individu commence du côté gauche (départ) et s'arrête lorsqu'il a atteint le côté droit (arrivée).
+
+    - Il y a toujours au moins une cellule de marge entre le parcours et les obstacles (de sorte qu'un obstacle ne puisse pas être confondu comme un embranchement du parcours).
+
+    - Il n'y a aucun obstacle ni sur la ligne de départ (première colonne) ni à l'arrivée (dernière colonne), il n'y a par conséquent qu'un seul 1 dans la première colonne et celui-ci représente obligatoirement le point de départ, et réciproquement à l'arrivée.
+
+    Un déplacement en ligne droite (horizontale ou verticale) d'une cellule équivaut à un déplacement de longueur 1. A partir de cette information, vous devez estimer la longueur d'un déplacement en diagonale à l'aide du théorème de Pythagore. Notez que votre fonction doit absolument tenir compte des déplacements diagonaux. **Faites attention de ne pas compabiliser les obstacles !**
+
+    Signature de la méthode :
+    ---------------------------------
+
+    ``def trajectoire(mat)``
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 2018 Janvier Problème 4 - Trajectoire
+network_grading: false
+problems:
+    q1:
+        header: Implémentez la fonction ``trajectoire(mat)`` en Python.
+        language: python
+        default: ''
+        type: code
+        name: 'Implémentation '
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

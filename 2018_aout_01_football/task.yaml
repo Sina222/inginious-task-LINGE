@@ -38,18 +38,18 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
-    time: '3'
     output: '2'
     memory: '100'
+    time: '3'
 name: 2018 Août Problème 1 - Football
 network_grading: false
 problems:
     thecode:
-        type: code
+        name: 'Implémentation '
         default: ''
-        name: Hello World !
-        header: Implémentez la fonction ``arret(but)`` en Python.
+        type: code
         language: python
+        header: Implémentez la fonction ``arret(but)`` en Python.
 stored_submissions: 0
 submission_limit:
     amount: -1
