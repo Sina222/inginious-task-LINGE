@@ -27,7 +27,7 @@ context: |
     Signature de la méthode :
     ---------------------------------
 
-    *def trajectoire(mat) :*
+    ``def trajectoire(mat)``
 environment: default
 evaluate: best
 groups: false
@@ -40,11 +40,11 @@ name: 2018 Janvier Probleme 4 - Trajectoire
 network_grading: false
 problems:
     q1:
+        default: ''
+        name: Ecrivez ici votre fonction trajectoire
         type: code
         header: ''
-        language: ''
-        default: ''
-        name: ''
+        language: Python
 stored_submissions: 0
 submission_limit:
     amount: -1
