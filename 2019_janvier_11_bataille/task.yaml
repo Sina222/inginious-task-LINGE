@@ -1,0 +1,41 @@
+accessible: true
+author: Bastien Nothomb
+context: |-
+    Pour cette question, nous allons vous demander de déterminer le gagnant d’une partie du célèbre jeu de cartes Bataille entre deux joueurs.  Le jeu commence en distribuant l’ensemble du jeu de cartes (52 cartes) aux deux joueurs de manière équitable sans que ceux-ci prennent connaissance de ces dernières. Chacun dispose donc d’un tas de cartes, face tournée vers la table (les cartes sont cachées). A chaque début de tour, chaque joueur retourne la carte en haut de son tas. Le gagnant est celui dont la carte a la plus haute valeur en considérant l’ordre décroissant de valeurs (13 valeurs au total), associé au rôle de chaque carte (roi, reine, valet, dix, etc), suivant : as (valeur maximale, bat toute autre carte), roi, dame, valet, dix… jusqu'au deux (valeur minimale). En cas d’égalité de valeurs, le gagnant sera déterminé en fonction de la couleur de la carte en considérant l’ordre décroissant de valeurs suivant : cœur (valeur maximale), carreau, trèfle et pique (valeur minimale). Ensuite, le gagnant place les deux cartes jouées sous son tas, face contre table. La partie se termine lorsqu’un des deux joueurs possède toutes les cartes du jeu.
+
+    Avant que la partie se joue, vous avez déjà encodé le tas de cartes de chaque joueur, dans l’ordre d’apparition des cartes dans le tas (la première étant celle qui sera tirée en premier), dans un tableau de la forme suivante :
+
+    .. image:: 2019_janvier_11_bataille/img.png
+              :align:  center
+
+    La première ligne de ce tableau contient l’identifiant de rôle de chaque carte (attention, cet identifiant est différent de la valeur de la carte pour certaines cartes). Ainsi, le 1 représente un as, le 2 représente un deux et que le 13 représente un roi. La seconde ligne encode la couleur de la carte, c’est-à-dire qu’un 1 représente la couleur cœur, un 2 la couleur carreau, un 3 la couleur trèfle et un 4 la couleur pique. Ainsi, dans notre exemple, la première carte est un as de cœur et la seconde un roi de carreau.
+
+    De plus, voici quelques conventions de codage. Nous considérons que le Joueur 1 joue toujours en premier. Nous fixons également l’ordre dans lequel le vainqueur () place les deux cartes gagnées en bas de son tas de cartes : la première carte remise sous le tas du vainqueur sera toujours la carte du Joueur 1 (celle du Joueur 2 étant placée juste après). La taille des tas étant variable tout le long de la partie, l’utilisation d’ArrayList est vivement conseillée.
+
+    Nous vous demandons d’implémenter la fonction suivante qui simule une partie jusqu’à la fin de celle-ci. Elle prend en arguments les tableaux encodant les tas de cartes initiaux du Joueur 1 et du Joueur 2, et renvoie le gagnant de la partie (1 pour Joueur 1 ; 2 pour Joueur 2)
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    output: '2'
+    memory: '100'
+name: 2019 Janvier Problème 11 - Bataille
+network_grading: false
+problems:
+    q1:
+        header: |-
+            Implémentez la fonction ``def bataille( j1, j2)`` en Python.
+
+            Cette fonction permet donc de déterminer le gagnant d’une partie de bataille sur base des tas de cartes initiaux des deux joueurs.
+        type: code
+        name: Implémentation
+        language: python
+        default: ''
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

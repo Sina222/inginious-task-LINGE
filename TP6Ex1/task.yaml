@@ -1,0 +1,29 @@
+accessible: true
+author: ''
+context: Ecrire une méthode, appelée **inverse**, ayant comme paramètre d’entrée **u**,
+    un tableau de réels à une dimension, et retournant en sortie ce même vecteur,
+    mais inversé; c'est-à-dire que le dernier élément devient le premier, l'avant-dernier
+    le deuxième, etc.
+environment: mcq
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    memory: '100'
+    output: '2'
+name: TP6Ex1 Examen Septembre 2008 – question 1
+network_grading: false
+problems:
+    q1:
+        default: ''
+        type: code
+        language: ''
+        header: La fonction ``inverse(u)``
+        name: Implémentation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

@@ -1,0 +1,41 @@
+accessible: 2018-11-02 12:00:00/
+author: Alexandre Fiset
+context: |-
+    Vous êtes programmeur débutant dans une entreprise qui gère les données d’institutions sportives. Dans ce cadre, vous devez écrire un programme Python qui extrait des statistiques descriptives élémentaires concernant les compétitions de formule 1 (grands prix). Votre dernière tâche consiste à déterminer quel pilote automobile de formule 1 a gagné le plus de compétitions sur une certaine période de temps prédéfinie.
+
+    Ainsi, vous disposez d’un tableau à trois dimensions ``x[i,j,k]`` qui comprend les temps de course (en secondes) enregistrés pour tous les pilotes (première dimension), les circuits (deuxième dimension) et les années (troisième dimension), les enregistrements des mesures commençant en l’année 2000. Chaque pilote, circuit et année sont donc identifiés par un numéro séquentiel (indice) allant de 0 au nombre prédéfini de pilotes/circuits/années. Le tableau est à jour : les derniers enregistrements datent de 2017. Notez que les valeurs de l’indice des années sont ordonnées du plus ancien (correspondant à l’année 2000) jusqu’au plus récent (correspondant à l’année 2017). Le tableau croît chaque année en ajoutant un nouvel indice d’année au tableau ainsi que les résultats de cette année.
+
+    Chaque élément du tableau ``x[i,j,k]`` (valeur entière) correspond au temps pris par le pilote numéro ``i`` pour terminer la course ayant lieu au circuit numéro j durant l’année numéro ``k``. Tous ces indices commencent à zéro. Si le pilote n’a pas participé à une course, ou a abandonné, la valeur enregistrée est négative et vaut ``–1`` (missing value).
+
+    Nous vous demandons d’écrire une fonction qui renvoie le numéro d’indice du pilote ayant gagné le plus de courses durant les n dernières années. par exemple ``n = 10``, donné en paramètre de la fonction, ce qui couvre les années 2007 à 2017. Il faut donc déterminer le pilote ayant remporté le plus de victoires dans cette période. Bien entendu, les valeurs manquantes ne sont pas prises en compte. Par exemple, si le pilote ``i = 3`` a gagné le plus de courses, la fonction renvoie ``3``.
+
+    Par ailleurs, il ne faut pas effectuer de vérification dans le programme : nous supposons que les données (tableau, etc) sont correctes et compatibles. De plus, nous supposons qu’il n’y a qu’un seul gagnant et minimum 2 pilots. Finalement, n’hésitez pas à écrire une ou plusieurs fonctions de support qui permettent d’alléger et simplifier le code.
+
+    La matrice x pour 4 pilotes et 3 circuit ressemble à :
+
+    .. code-block:: python
+
+        x = [[[808, 218, 454, 403, 234, 804, 686, 752, 209, 62, 222, 456, 59, 780, 379, 637, 604, 377], [347, 613, 592, 723, 899, 467, 868, 683, 755, 102, 869, 846, 260, 291, 304, 192, 454, 493], [403, 855, 182, 95, 27, 431, 671, 988, 196, 948, 34, 481, 29, 562, 223, 12, 509, 258]], [[624, 586, 516, 785, 347, 66, 344, 450, 997, 235, 976, 24, 611, 710, 60, 2, 122, 256], [726, 648, 903, 868, 350, 645, 989, 829, 47, 889, 645, 903, 841, 300, 890, 870, 518, 68], [697, 276, 769, 205, 395, 20, 619, 586, 372, 778, 378, 399, 764, 89, 780, 382, 61, 503]], [[338, 879, 3, 237, 539, 44, 591, 985, 14, 123, 882, 763, 968, 996, 343, 253, 267, 459], [302, 839, 747, 708, 531, 353, 293, 445, 283, 977, 344, 307, 281, 759, 591, 447, 797, 214], [905, 728, 163, 932, 687, 827, 9, 648, 508, 242, 348, 711, 216, 377, 446, 902, 643, 118]], [[76, 357, 765, 76, 312, 540, 899, 476, 12, 863, 624, 372, 819, 777, 550, 43, 784, 522], [208, 677, 861, 398, 49, 640, 575, 586, 151, 590, 834, 392, 598, 553, 123, 543, 41, 528], [268, 908, 62, 143, 74, 462, 264, 303, 122, 4, 585, 249, 118, 175, 268, 53, 34, 841]]]
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '300'
+    output: '2'
+    memory: '100'
+name: 2018 Août Problème 2 - Meilleur pilote
+network_grading: false
+problems:
+    q1:
+        language: python
+        header: Implémentez la fonction ``piloteLePlusRapide(n)`` en Python.
+        default: ''
+        name: Implémentation
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
