@@ -8,23 +8,23 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
-    output: '2'
     memory: '100'
     time: '30'
+    output: '2'
 name: TP1 Exercice 3 - Volume
 network_grading: false
 problems:
     q1:
-        type: code
-        language: ''
-        header: Méthode ``volume(r)``
         name: Implémentation
+        header: Méthode ``volume(r)``
+        type: code
         default: ''
+        language: python
     q2:
-        language: ''
+        name: Implémentation
         type: code
         header: Méthode ``surface(r)``
-        name: Implémentation
+        language: python
         default: ''
 stored_submissions: 0
 submission_limit:
