@@ -1,5 +1,5 @@
 accessible: true
-author:  Alexandre Fiset
+author: Alexandre Fiset
 context: |-
     Ecrire une méthode test qui demande à l’utilisateur d’entrer au clavier successivement 3 valeurs entières, et affiche en sortie la valeur la plus élevée qui a été introduite. Au cas où au moins 2 des entiers sont égaux, afficher une petite phrase pour informer l’utilisateur.
 
@@ -22,25 +22,23 @@ context: |-
           Entrez le numero 3 :4
           Le nombre le plus grand est 4
           Mais vous avez introduit des valeurs identiques !
-
-
 environment: default
 evaluate: best
 groups: false
 input_random: '0'
 limits:
-    time: '30'
     memory: '100'
     output: '2'
-name: TP2  Exercice 1 - maximum
+    time: '30'
+name: TP2  Exercice 1 - Maximum
 network_grading: false
 problems:
     q1:
-        default: ''
-        type: code
-        language: python
-        header: Implementer la methode ``def main()``
         name: Implémentation
+        type: code
+        default: ''
+        header: Implementer la methode ``def main()``
+        language: python
 stored_submissions: 0
 submission_limit:
     amount: -1

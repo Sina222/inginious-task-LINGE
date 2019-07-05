@@ -20,18 +20,18 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
+    memory: '100'
     output: '2'
     time: '30'
-    memory: '100'
-name: TP1 exercice 1
+name: TP1 Exercice 1 - Heure
 network_grading: false
 problems:
     studentcode:
+        type: code
+        name: Implémentation
+        default: ''
         header: ''
         language: python
-        type: code
-        default: ''
-        name: Implémentation
 stored_submissions: 0
 submission_limit:
     amount: -1
